@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://www.letskai.com',
+  site: 'https://kaikristiansen.github.io',
+  base: '/Personal_site/',
 });
