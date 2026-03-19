@@ -9,9 +9,9 @@ import Layout from '../layouts/Layout.astro';
       <a href="#" class="logo">LetsK<span>AI</span></a>
       <div class="nav-links" id="navLinks">
         <a href="#services">Services</a>
-        <a href="#how-it-works">How It Works</a>
+        <a href="#how-it-works">Process</a>
         <a href="#about">About</a>
-        <a href="#cta" class="btn btn-primary nav-cta">Book a Free Call</a>
+        <a href="#cta" class="btn btn-nav">Book a Free Call</a>
       </div>
       <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -21,109 +21,181 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- ===== HERO ===== -->
   <section class="hero">
+    <div class="hero-texture"></div>
     <div class="container">
       <div class="hero-content">
-        <div class="hero-badge">&#9889; AI Automation for Small Business</div>
+        <div class="hero-badge">
+          <span class="badge-leaf">&#9672;</span>
+          AI Automation for Small Business
+        </div>
         <h1>
-          Stop Doing Work a Machine
-          <span class="highlight">Could Handle</span>
+          Stop doing work<br/>a machine <em>could handle</em>
         </h1>
-        <p>
+        <p class="hero-desc">
           We help small businesses automate repetitive tasks, streamline operations,
           and get time back — using practical AI tools, not hype.
         </p>
         <div class="hero-buttons">
-          <a href="#cta" class="btn btn-primary">Book a Free Strategy Call &#8594;</a>
-          <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
-        </div>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <strong>10+</strong>
-            <span>Hours saved per week</span>
-          </div>
-          <div class="hero-stat">
-            <strong>50+</strong>
-            <span>Workflows automated</span>
-          </div>
-          <div class="hero-stat">
-            <strong>3x</strong>
-            <span>Faster response times</span>
-          </div>
+          <a href="#cta" class="btn btn-primary">
+            Book a Free Strategy Call
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#how-it-works" class="btn btn-ghost">See How It Works</a>
         </div>
       </div>
       <div class="hero-visual">
-        <div class="hero-card">
-          <div class="hero-card-header">
-            <div class="hero-card-icon">&#9889;</div>
-            <div>
-              <div class="hero-card-title">Today's Automations</div>
-              <div class="hero-card-sub">Running smoothly</div>
+        <!-- Dashboard mockup -->
+        <div class="dashboard">
+          <div class="dash-header">
+            <div class="dash-dots"><span></span><span></span><span></span></div>
+            <div class="dash-title">LetsK AI Dashboard</div>
+            <div class="dash-status">
+              <span class="status-dot"></span> All systems running
             </div>
           </div>
-          <div class="automation-item">
-            <div class="check">&#10003;</div>
-            <span>Invoice processed &amp; sent</span>
-            <span class="time-saved">Saved 25 min</span>
-          </div>
-          <div class="automation-item">
-            <div class="check">&#10003;</div>
-            <span>New lead added to CRM</span>
-            <span class="time-saved">Saved 10 min</span>
-          </div>
-          <div class="automation-item">
-            <div class="check">&#10003;</div>
-            <span>Support ticket triaged</span>
-            <span class="time-saved">Saved 15 min</span>
-          </div>
-          <div class="automation-item">
-            <div class="check">&#10003;</div>
-            <span>Weekly report generated</span>
-            <span class="time-saved">Saved 45 min</span>
+          <div class="dash-body">
+            <div class="dash-sidebar">
+              <div class="dash-nav-item active">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h4v6H1V7zm8-6h4v12H9V1z" stroke="currentColor" stroke-width="1.2"/></svg>
+                Overview
+              </div>
+              <div class="dash-nav-item">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M12 2L5.5 8.5 3 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Automations
+              </div>
+              <div class="dash-nav-item">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                Integrations
+              </div>
+            </div>
+            <div class="dash-main">
+              <div class="dash-stats-row">
+                <div class="dash-stat-card">
+                  <div class="dash-stat-label">Time Saved Today</div>
+                  <div class="dash-stat-value">1h 35m</div>
+                  <div class="dash-stat-bar"><div class="bar-fill" style="width: 72%"></div></div>
+                </div>
+                <div class="dash-stat-card">
+                  <div class="dash-stat-label">Tasks Automated</div>
+                  <div class="dash-stat-value">12</div>
+                  <div class="dash-stat-bar"><div class="bar-fill" style="width: 85%"></div></div>
+                </div>
+              </div>
+              <div class="dash-activity">
+                <div class="dash-activity-title">Recent Activity</div>
+                <div class="dash-activity-item">
+                  <div class="activity-check">&#10003;</div>
+                  <div class="activity-text">
+                    <span>Invoice processed & sent</span>
+                    <span class="activity-time">2 min ago</span>
+                  </div>
+                  <span class="activity-badge">-25 min</span>
+                </div>
+                <div class="dash-activity-item">
+                  <div class="activity-check">&#10003;</div>
+                  <div class="activity-text">
+                    <span>New lead added to CRM</span>
+                    <span class="activity-time">15 min ago</span>
+                  </div>
+                  <span class="activity-badge">-10 min</span>
+                </div>
+                <div class="dash-activity-item">
+                  <div class="activity-check">&#10003;</div>
+                  <div class="activity-text">
+                    <span>Support ticket triaged</span>
+                    <span class="activity-time">28 min ago</span>
+                  </div>
+                  <span class="activity-badge">-15 min</span>
+                </div>
+                <div class="dash-activity-item">
+                  <div class="activity-check">&#10003;</div>
+                  <div class="activity-text">
+                    <span>Weekly report generated</span>
+                    <span class="activity-time">1 hr ago</span>
+                  </div>
+                  <span class="activity-badge">-45 min</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ===== STATS BAR ===== -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-item">
+          <strong>10+</strong>
+          <span>Hours saved weekly</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <strong>50+</strong>
+          <span>Workflows automated</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <strong>3x</strong>
+          <span>Faster response times</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ===== SERVICES ===== -->
   <section class="services" id="services">
     <div class="container">
       <div class="section-header">
         <div class="section-label">What We Do</div>
-        <h2 class="section-title">AI Services Built for Small Business</h2>
+        <h2 class="section-title">AI services built for <em>small business</em></h2>
         <p class="section-subtitle">
-          Practical solutions — not science projects. Every service is designed to save
-          you time, reduce errors, and let your team focus on what matters.
+          Practical solutions — not science projects. Every service saves
+          you time, reduces errors, and lets your team focus on what matters.
         </p>
       </div>
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-icon">&#129302;</div>
-          <h3>AI Chatbots &amp; Assistants</h3>
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" stroke="var(--sage)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>AI Chatbots & Assistants</h3>
           <p>Custom chatbots that answer customer questions, qualify leads, and handle routine inquiries — 24/7.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon">&#128260;</div>
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83" stroke="var(--sage)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
           <h3>Workflow Automation</h3>
           <p>Connect your tools and eliminate manual steps. Data moves automatically between your apps.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon">&#128202;</div>
-          <h3>Data &amp; Reporting</h3>
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="var(--sage)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Data & Reporting</h3>
           <p>Automated reports and dashboards that give you visibility without the manual work.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon">&#128231;</div>
-          <h3>Email &amp; Follow-Up</h3>
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="var(--sage)" stroke-width="1.5"/><path d="M22 6l-10 7L2 6" stroke="var(--sage)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Email & Follow-Up</h3>
           <p>Smart email handling, auto-responses, and follow-up sequences that keep customers engaged.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon">&#128197;</div>
-          <h3>Scheduling &amp; Booking</h3>
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="var(--sage)" stroke-width="1.5"/><path d="M16 2v4M8 2v4M3 10h18" stroke="var(--sage)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Scheduling & Booking</h3>
           <p>Automated scheduling that handles confirmations, reminders, and rescheduling without back-and-forth.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon">&#128295;</div>
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="var(--sage)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
           <h3>Custom Integrations</h3>
           <p>Make your existing tools work together. We connect the apps you already use into a seamless system.</p>
         </div>
@@ -135,8 +207,8 @@ import Layout from '../layouts/Layout.astro';
   <section class="how-it-works" id="how-it-works">
     <div class="container">
       <div class="section-header">
-        <div class="section-label">How It Works</div>
-        <h2 class="section-title">From Manual Chaos to Automated Clarity</h2>
+        <div class="section-label">Our Process</div>
+        <h2 class="section-title">From manual chaos to <em>automated clarity</em></h2>
         <p class="section-subtitle">
           We don't sell you software and wish you luck. We work with you to find
           what's slowing your business down — then build automations that fix it.
@@ -144,31 +216,75 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="steps">
         <div class="step">
-          <div class="step-number">1</div>
-          <div class="step-content">
+          <div class="step-marker">
+            <div class="step-number">1</div>
+          </div>
+          <div class="step-card">
             <h3>We Audit Your Workflows</h3>
             <p>We look at how your team actually works — the tools, the steps, the bottlenecks. No generic templates.</p>
+            <!-- Mini dashboard mockup -->
+            <div class="step-mockup">
+              <div class="mockup-bar"></div>
+              <div class="mockup-lines">
+                <div class="mockup-line" style="width:80%"></div>
+                <div class="mockup-line" style="width:60%"></div>
+                <div class="mockup-line highlight" style="width:90%"></div>
+                <div class="mockup-line" style="width:45%"></div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="step">
-          <div class="step-number">2</div>
-          <div class="step-content">
+          <div class="step-marker">
+            <div class="step-number">2</div>
+          </div>
+          <div class="step-card">
             <h3>We Design the Automation</h3>
             <p>We map out exactly what gets automated, how it connects to your existing tools, and what changes for your team.</p>
+            <div class="step-mockup">
+              <div class="mockup-flow">
+                <div class="flow-node">Input</div>
+                <div class="flow-arrow">&rarr;</div>
+                <div class="flow-node active">AI</div>
+                <div class="flow-arrow">&rarr;</div>
+                <div class="flow-node">Output</div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="step">
-          <div class="step-number">3</div>
-          <div class="step-content">
-            <h3>We Build &amp; Launch</h3>
+          <div class="step-marker">
+            <div class="step-number">3</div>
+          </div>
+          <div class="step-card">
+            <h3>We Build & Launch</h3>
             <p>We build the workflows, test them thoroughly, and deploy them into your business — with training included.</p>
+            <div class="step-mockup">
+              <div class="mockup-checklist">
+                <div class="check-row done"><span>&#10003;</span> Build workflows</div>
+                <div class="check-row done"><span>&#10003;</span> Run tests</div>
+                <div class="check-row done"><span>&#10003;</span> Deploy & train</div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="step">
-          <div class="step-number">4</div>
-          <div class="step-content">
-            <h3>We Monitor &amp; Improve</h3>
+          <div class="step-marker">
+            <div class="step-number">4</div>
+          </div>
+          <div class="step-card">
+            <h3>We Monitor & Improve</h3>
             <p>Automations aren't set-and-forget. We track performance, fix issues, and optimize over time.</p>
+            <div class="step-mockup">
+              <div class="mockup-graph">
+                <div class="graph-bar" style="height:30%"></div>
+                <div class="graph-bar" style="height:50%"></div>
+                <div class="graph-bar" style="height:45%"></div>
+                <div class="graph-bar" style="height:70%"></div>
+                <div class="graph-bar" style="height:65%"></div>
+                <div class="graph-bar accent" style="height:90%"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -178,54 +294,58 @@ import Layout from '../layouts/Layout.astro';
   <!-- ===== ABOUT ===== -->
   <section class="about" id="about">
     <div class="container">
-      <div class="about-text">
-        <div class="section-label">About LetsK AI</div>
-        <h2 class="section-title">We Make AI Work for Small Businesses</h2>
-        <p>
-          We're not a big agency with generic playbooks. We're a small, focused team
-          that helps small businesses use AI to run better — without the jargon,
-          the bloated retainers, or the empty promises.
-        </p>
-        <p>
-          We believe AI should be practical, affordable, and easy to understand.
-          If it doesn't save you time or money, we won't recommend it.
-        </p>
-        <div class="about-values">
-          <div class="value">
-            <span class="value-icon">&#127919;</span>
-            <div>
-              <strong>Results-First</strong>
-              <p>Every automation we build is tied to a measurable outcome.</p>
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-label">About LetsK AI</div>
+          <h2 class="section-title">We make AI work for <em>small businesses</em></h2>
+          <p>
+            We're not a big agency with generic playbooks. We're a small, focused team
+            that helps small businesses use AI to run better — without the jargon,
+            the bloated retainers, or the empty promises.
+          </p>
+          <p>
+            We believe AI should be practical, affordable, and easy to understand.
+            If it doesn't save you time or money, we won't recommend it.
+          </p>
+          <div class="about-values">
+            <div class="value-item">
+              <div class="value-dot"></div>
+              <div>
+                <strong>Results-First</strong>
+                <p>Every automation is tied to a measurable outcome.</p>
+              </div>
             </div>
-          </div>
-          <div class="value">
-            <span class="value-icon">&#128483;</span>
-            <div>
-              <strong>Plain Language</strong>
-              <p>No tech jargon, no buzzwords. We explain everything clearly.</p>
+            <div class="value-item">
+              <div class="value-dot"></div>
+              <div>
+                <strong>Plain Language</strong>
+                <p>No tech jargon, no buzzwords. We explain clearly.</p>
+              </div>
             </div>
-          </div>
-          <div class="value">
-            <span class="value-icon">&#129309;</span>
-            <div>
-              <strong>Built to Last</strong>
-              <p>Reliable systems that keep running — not one-off hacks.</p>
+            <div class="value-item">
+              <div class="value-dot"></div>
+              <div>
+                <strong>Built to Last</strong>
+                <p>Reliable systems that keep running — not hacks.</p>
+              </div>
             </div>
-          </div>
-          <div class="value">
-            <span class="value-icon">&#128170;</span>
-            <div>
-              <strong>No Lock-In</strong>
-              <p>We train your team to manage what we build. You own it.</p>
+            <div class="value-item">
+              <div class="value-dot"></div>
+              <div>
+                <strong>No Lock-In</strong>
+                <p>We train your team to manage what we build.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="about-quote">
-        <blockquote>
-          "We approach every project with one question: will this actually make your day easier?"
-        </blockquote>
-        <cite>— The LetsK AI Team</cite>
+        <div class="about-card">
+          <div class="about-card-inner">
+            <blockquote>
+              "We approach every project with one question: will this actually make your day easier?"
+            </blockquote>
+            <cite>— The LetsK AI Team</cite>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -233,15 +353,18 @@ import Layout from '../layouts/Layout.astro';
   <!-- ===== CTA ===== -->
   <section class="cta" id="cta">
     <div class="container">
-      <h2>Ready to Get Your Time Back?</h2>
-      <p>
-        Book a free 30-minute strategy call. We'll look at your current workflows,
-        identify what can be automated, and give you a clear plan — no obligation.
-      </p>
-      <a href="https://calendly.com" target="_blank" rel="noopener" class="btn btn-white">
-        Book Your Free Call &#8594;
-      </a>
-      <p class="cta-note">No commitment. No hard sell. Just a conversation about what's possible.</p>
+      <div class="cta-content">
+        <h2>Ready to get your <em>time back?</em></h2>
+        <p>
+          Book a free 30-minute strategy call. We'll look at your current workflows,
+          identify what can be automated, and give you a clear plan — no obligation.
+        </p>
+        <a href="https://calendly.com/haurno/30min" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+          Book Your Free Call
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <p class="cta-note">No commitment. No hard sell. Just a conversation about what's possible.</p>
+      </div>
     </div>
   </section>
 
@@ -255,7 +378,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="footer-links">
           <a href="#services">Services</a>
-          <a href="#how-it-works">How It Works</a>
+          <a href="#how-it-works">Process</a>
           <a href="#about">About</a>
           <a href="#cta">Contact</a>
         </div>
@@ -266,119 +389,143 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </footer>
+
+  <!-- Sticky mobile CTA -->
+  <div class="mobile-cta" id="mobileCta">
+    <a href="#cta" class="btn btn-primary btn-mobile-cta">
+      Book a Free Call
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
 </Layout>
 
 <style>
-  /* ===== UTILITIES ===== */
+  /* ===========================================
+     MOBILE-FIRST CSS
+     Base = phone (< 640px)
+     sm  = 640px+  (large phone / small tablet)
+     md  = 768px+  (tablet)
+     lg  = 1024px+ (desktop)
+     =========================================== */
+
+  /* ===== BASE (MOBILE) ===== */
   .container {
-    max-width: 1120px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 20px;
   }
 
+  /* Buttons — large touch targets (min 48px) */
   .btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
-    padding: 16px 32px;
-    border-radius: 12px;
-    font-size: 1rem;
+    padding: 16px 28px;
+    min-height: 52px;
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
     font-weight: 600;
     cursor: pointer;
     border: none;
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
+    font-family: inherit;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .btn-primary {
-    background: #6c63ff;
+    background: var(--sage);
     color: #fff;
-    box-shadow: 0 4px 20px rgba(108, 99, 255, 0.35);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   }
 
-  .btn-primary:hover {
-    background: #5a52d5;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 28px rgba(108, 99, 255, 0.45);
+  .btn-primary:active {
+    transform: scale(0.98);
   }
 
-  .btn-secondary {
+  .btn-ghost {
     background: transparent;
-    color: #6c63ff;
-    border: 2px solid #6c63ff;
+    color: var(--text);
+    border: 1.5px solid var(--border);
   }
 
-  .btn-secondary:hover {
-    background: #6c63ff;
+  .btn-nav {
+    background: var(--sage);
     color: #fff;
+    padding: 14px 24px;
+    font-size: 0.9rem;
+    border-radius: var(--radius-sm);
+    width: 100%;
   }
 
-  .btn-white {
-    background: #fff;
-    color: #6c63ff;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  .btn-lg { padding: 18px 32px; font-size: 1rem; }
+
+  .btn-mobile-cta {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 16px 24px;
+    border-radius: var(--radius-sm);
   }
 
-  .btn-white:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.15);
-  }
-
+  /* Section headers */
   .section-header {
     text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 40px;
   }
 
   .section-label {
-    font-size: 0.8rem;
-    font-weight: 700;
+    font-size: 0.72rem;
+    font-weight: 600;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: #6c63ff;
+    color: var(--sage);
     margin-bottom: 12px;
   }
 
   .section-title {
-    font-size: 2.25rem;
-    font-weight: 800;
+    font-size: 1.75rem;
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: 16px;
-    color: #1a1a2e;
+    color: var(--text);
+  }
+
+  .section-title em {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
   }
 
   .section-subtitle {
-    font-size: 1.1rem;
-    color: #555;
-    max-width: 600px;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    max-width: 540px;
     margin: 0 auto;
     line-height: 1.7;
   }
 
   .logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #1a1a2e;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.3px;
   }
 
-  .logo span {
-    color: #6c63ff;
-  }
+  .logo span { color: var(--sage); }
 
-  /* ===== NAVBAR ===== */
+  /* ===== NAVBAR (mobile) ===== */
   .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 16px 0;
-    transition: all 0.3s ease;
-  }
-
-  .navbar.scrolled {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
-    padding: 12px 0;
+    padding: 14px 0;
+    background: rgba(250, 248, 245, 0.95);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid var(--border-light);
+    transition: padding 0.3s ease;
   }
 
   .navbar .container {
@@ -388,70 +535,77 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .nav-links {
+    display: none;
+  }
+
+  .nav-links.open {
     display: flex;
-    align-items: center;
-    gap: 32px;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(250, 248, 245, 0.98);
+    backdrop-filter: blur(20px);
+    padding: 16px 20px 24px;
+    gap: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid var(--border);
   }
 
   .nav-links a {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
-    color: #555;
+    color: var(--text-muted);
+    padding: 14px 0;
+    display: block;
+    -webkit-tap-highlight-color: transparent;
     transition: color 0.2s;
   }
 
-  .nav-links a:hover {
-    color: #6c63ff;
-  }
-
-  .nav-cta {
-    padding: 10px 24px !important;
-    font-size: 0.9rem !important;
-    border-radius: 10px !important;
-  }
-
   .mobile-toggle {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
     background: none;
     border: none;
-    padding: 4px;
+    padding: 8px;
+    -webkit-tap-highlight-color: transparent;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
   }
 
   .mobile-toggle span {
-    width: 24px;
+    width: 22px;
     height: 2px;
-    background: #1a1a2e;
+    background: var(--text);
     border-radius: 2px;
     transition: all 0.3s;
   }
 
-  /* ===== HERO ===== */
+  /* ===== HERO (mobile) ===== */
   .hero {
-    padding: 160px 0 100px;
-    background: linear-gradient(165deg, #f8f7ff 0%, #eef0ff 40%, #fff 100%);
+    padding: 100px 0 48px;
     position: relative;
     overflow: hidden;
+    background: var(--cream);
   }
 
-  .hero::before {
-    content: '';
+  .hero-texture {
     position: absolute;
-    top: -200px;
-    right: -200px;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(108, 99, 255, 0.08) 0%, transparent 70%);
-    border-radius: 50%;
+    inset: 0;
+    opacity: 0.35;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
   }
 
   .hero .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
     position: relative;
     z-index: 1;
   }
@@ -460,549 +614,967 @@ import Layout from '../layouts/Layout.astro';
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(108, 99, 255, 0.08);
-    border: 1px solid rgba(108, 99, 255, 0.15);
-    padding: 8px 16px;
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    padding: 7px 14px;
     border-radius: 100px;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 600;
-    color: #6c63ff;
-    margin-bottom: 24px;
+    color: var(--sage);
+    margin-bottom: 8px;
+    align-self: flex-start;
   }
+
+  .badge-leaf { color: var(--sage-light); }
 
   .hero h1 {
-    font-size: 3.25rem;
-    font-weight: 800;
-    line-height: 1.12;
-    margin-bottom: 24px;
-    color: #1a1a2e;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    color: var(--text);
+    letter-spacing: -0.3px;
   }
 
-  .highlight {
-    background: linear-gradient(135deg, #6c63ff, #9f7aea);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .hero h1 em {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
   }
 
-  .hero p {
-    font-size: 1.15rem;
-    color: #555;
-    margin-bottom: 36px;
+  .hero-desc {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 28px;
     line-height: 1.7;
-    max-width: 480px;
   }
 
   .hero-buttons {
     display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
   }
 
-  .hero-stats {
-    display: flex;
-    gap: 40px;
-    margin-top: 48px;
-    padding-top: 32px;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-  }
-
-  .hero-stat strong {
-    display: block;
-    font-size: 2rem;
-    font-weight: 800;
-    color: #6c63ff;
-  }
-
-  .hero-stat span {
-    font-size: 0.85rem;
-    color: #777;
-  }
-
-  /* Hero card */
-  .hero-visual {
-    display: flex;
-    justify-content: center;
-  }
-
-  .hero-card {
-    background: #fff;
-    border-radius: 20px;
-    padding: 36px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.04);
+  .hero-buttons .btn {
     width: 100%;
-    max-width: 400px;
   }
 
-  .hero-card-header {
+  /* ===== DASHBOARD MOCKUP (mobile) ===== */
+  .dashboard {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03), 0 8px 24px rgba(0, 0, 0, 0.05);
+  }
+
+  .dash-header {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 24px;
+    gap: 10px;
+    padding: 12px 16px;
+    background: var(--cream-warm);
+    border-bottom: 1px solid var(--border);
   }
 
-  .hero-card-icon {
-    width: 44px;
-    height: 44px;
-    background: linear-gradient(135deg, #6c63ff, #9f7aea);
-    border-radius: 12px;
+  .dash-dots {
+    display: flex;
+    gap: 4px;
+  }
+
+  .dash-dots span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--border);
+  }
+
+  .dash-dots span:first-child { background: #e8a0a0; }
+  .dash-dots span:nth-child(2) { background: #e8d4a0; }
+  .dash-dots span:last-child { background: #a0c8a0; }
+
+  .dash-title {
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    flex: 1;
+    text-align: center;
+  }
+
+  .dash-status {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 1.25rem;
-    flex-shrink: 0;
-  }
-
-  .hero-card-title {
-    font-weight: 700;
-    font-size: 1rem;
-    color: #1a1a2e;
-  }
-
-  .hero-card-sub {
-    font-size: 0.8rem;
-    color: #999;
-  }
-
-  .automation-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 0;
-    border-bottom: 1px solid #f0f0f0;
-    font-size: 0.9rem;
-    color: #333;
+    gap: 5px;
+    font-size: 0.65rem;
+    color: var(--sage);
     font-weight: 500;
   }
 
-  .automation-item:last-child {
-    border-bottom: none;
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    background: #5c9a5c;
+    border-radius: 50%;
+    animation: pulse-dot 2s ease-in-out infinite;
   }
 
-  .check {
-    width: 26px;
-    height: 26px;
-    background: #e8ffe8;
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  .dash-body {
+    display: flex;
+  }
+
+  /* Sidebar hidden on mobile */
+  .dash-sidebar { display: none; }
+
+  .dash-main {
+    flex: 1;
+    padding: 14px;
+  }
+
+  .dash-stats-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .dash-stat-card {
+    background: var(--cream);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .dash-stat-label {
+    font-size: 0.6rem;
+    color: var(--text-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+  }
+
+  .dash-stat-value {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+
+  .dash-stat-bar {
+    height: 3px;
+    background: var(--border-light);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .bar-fill {
+    height: 100%;
+    background: var(--sage);
+    border-radius: 3px;
+  }
+
+  .dash-activity {
+    background: var(--cream);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .dash-activity-title {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .dash-activity-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-light);
+    font-size: 0.72rem;
+  }
+
+  .dash-activity-item:last-child { border-bottom: none; }
+
+  .activity-check {
+    width: 20px;
+    height: 20px;
+    background: rgba(92, 154, 92, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.75rem;
+    font-size: 0.55rem;
+    color: #5c9a5c;
     flex-shrink: 0;
   }
 
-  .time-saved {
-    margin-left: auto;
-    font-size: 0.75rem;
-    color: #6c63ff;
-    font-weight: 600;
-    background: rgba(108, 99, 255, 0.08);
-    padding: 4px 10px;
-    border-radius: 6px;
+  .activity-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .activity-text span:first-child {
+    font-weight: 500;
+    color: var(--text);
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  /* ===== SERVICES ===== */
-  .services {
-    padding: 100px 0;
-    background: #1a1a2e;
-    color: #fff;
+  .activity-time {
+    font-size: 0.6rem;
+    color: var(--text-faint);
   }
 
-  .services .section-label {
-    color: #9f7aea;
+  .activity-badge {
+    font-size: 0.62rem;
+    color: var(--sage);
+    font-weight: 600;
+    background: var(--sage-glow);
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
-  .services .section-title {
-    color: #fff;
+  /* ===== STATS BAR (mobile) ===== */
+  .stats-bar {
+    background: var(--warm-white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
   }
 
-  .services .section-subtitle {
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  .services-grid {
+  .stats-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 0;
+    padding: 24px 0;
+  }
+
+  .stat-sep { display: none; }
+
+  .stat-item {
+    text-align: center;
+    padding: 0 8px;
+  }
+
+  .stat-item:not(:last-child) {
+    border-right: 1px solid var(--border);
+  }
+
+  .stat-item strong {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--sage);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .stat-item span {
+    font-size: 0.7rem;
+    color: var(--text-faint);
+    font-weight: 500;
+  }
+
+  /* ===== SERVICES (mobile) ===== */
+  .services {
+    padding: 64px 0;
+    background: var(--charcoal-deep);
+  }
+
+  .services .section-label { color: var(--sage-lighter); }
+  .services .section-title { color: #fff; }
+  .services .section-title em { color: var(--sand); }
+  .services .section-subtitle { color: rgba(255,255,255,0.45); }
+
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
   }
 
   .service-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 18px;
-    padding: 32px 28px;
-    transition: all 0.3s;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: var(--radius);
+    padding: 24px 22px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
   }
 
-  .service-card:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(108, 99, 255, 0.3);
-    transform: translateY(-4px);
-  }
-
-  .service-icon {
-    font-size: 1.75rem;
-    margin-bottom: 16px;
+  .service-icon-wrap {
+    width: 44px;
+    height: 44px;
+    background: rgba(163, 180, 155, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-bottom: 0;
   }
 
   .service-card h3 {
-    font-size: 1.05rem;
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 4px;
     color: #fff;
   }
 
   .service-card p {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.4);
     line-height: 1.6;
   }
 
-  /* ===== HOW IT WORKS ===== */
+  /* ===== HOW IT WORKS (mobile) ===== */
   .how-it-works {
-    padding: 100px 0;
-    background: #fafafa;
+    padding: 64px 0;
+    background: var(--cream);
   }
 
   .steps {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    max-width: 800px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .step {
     display: flex;
-    gap: 20px;
+    gap: 14px;
     align-items: flex-start;
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 16px;
-    padding: 28px;
-    transition: all 0.3s;
   }
 
-  .step:hover {
-    border-color: #e0deff;
-    box-shadow: 0 8px 30px rgba(108, 99, 255, 0.08);
+  .step-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 20px;
   }
 
   .step-number {
-    width: 44px;
-    height: 44px;
-    background: linear-gradient(135deg, #6c63ff, #9f7aea);
-    border-radius: 12px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--sage-glow);
+    border: 1.5px solid var(--sage-lighter);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    font-weight: 800;
-    font-size: 1rem;
-    flex-shrink: 0;
-  }
-
-  .step-content h3 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 700;
-    margin-bottom: 8px;
+    color: var(--sage);
   }
 
-  .step-content p {
-    font-size: 0.9rem;
-    color: #666;
+  .step-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .step-card h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+
+  .step-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
     line-height: 1.6;
+    margin-bottom: 14px;
   }
 
-  /* ===== ABOUT ===== */
-  .about {
-    padding: 100px 0;
+  .step-mockup {
+    background: var(--cream);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 12px;
   }
 
-  .about .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
+  .mockup-bar {
+    height: 4px;
+    background: var(--border);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    width: 40%;
+  }
+
+  .mockup-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .mockup-line {
+    height: 5px;
+    background: var(--border-light);
+    border-radius: 3px;
+  }
+
+  .mockup-line.highlight { background: var(--sand); }
+
+  .mockup-flow {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 6px;
   }
 
-  .about-text .section-label {
-    margin-bottom: 12px;
+  .flow-node {
+    padding: 6px 12px;
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--text-muted);
   }
 
+  .flow-node.active {
+    background: var(--sage);
+    color: #fff;
+    border-color: var(--sage);
+  }
+
+  .flow-arrow {
+    color: var(--text-faint);
+    font-size: 0.75rem;
+  }
+
+  .mockup-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .check-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  .check-row span { color: #5c9a5c; font-size: 0.68rem; }
+
+  .mockup-graph {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    height: 44px;
+  }
+
+  .graph-bar {
+    flex: 1;
+    background: var(--border);
+    border-radius: 3px 3px 0 0;
+  }
+
+  .graph-bar.accent { background: var(--sage); }
+
+  /* ===== ABOUT (mobile) ===== */
+  .about {
+    padding: 64px 0;
+    background: var(--warm-white);
+  }
+
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-text .section-label { margin-bottom: 12px; }
   .about-text .section-title {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    text-align: left;
   }
 
-  .about-text p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.7;
-    margin-bottom: 16px;
+  .about-text > p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: 14px;
   }
 
   .about-values {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 28px;
   }
 
-  .value {
+  .value-item {
     display: flex;
     gap: 14px;
     align-items: flex-start;
-    padding: 20px;
-    background: #f9f9fb;
-    border-radius: 14px;
-    border: 1px solid #eee;
+    padding: 18px;
+    background: var(--cream);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
   }
 
-  .value-icon {
-    font-size: 1.4rem;
+  .value-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--sage);
+    border-radius: 50%;
     flex-shrink: 0;
+    margin-top: 5px;
   }
 
-  .value strong {
+  .value-item strong {
     display: block;
-    font-size: 0.95rem;
-    font-weight: 700;
-    margin-bottom: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+    color: var(--text);
   }
 
-  .value p {
-    font-size: 0.85rem;
-    color: #666;
+  .value-item p {
+    font-size: 0.82rem;
+    color: var(--text-muted);
     margin-bottom: 0;
     line-height: 1.5;
   }
 
-  .about-quote {
-    background: linear-gradient(135deg, #6c63ff, #9f7aea);
-    border-radius: 24px;
-    padding: 48px;
+  .about-card-inner {
+    background: var(--charcoal-deep);
+    border-radius: var(--radius-lg);
+    padding: 36px 28px;
     color: #fff;
-  }
-
-  .about-quote blockquote {
-    font-size: 1.35rem;
-    font-weight: 600;
-    line-height: 1.5;
-    margin-bottom: 24px;
-    font-style: normal;
-  }
-
-  .about-quote cite {
-    font-size: 0.9rem;
-    opacity: 0.8;
-    font-style: normal;
-  }
-
-  /* ===== CTA ===== */
-  .cta {
-    background: linear-gradient(165deg, #6c63ff 0%, #5a52d5 100%);
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
     position: relative;
     overflow: hidden;
   }
 
-  .cta::before {
+  .about-card-inner::before {
     content: '';
     position: absolute;
-    top: -100px;
-    left: -100px;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+    top: -40px;
+    right: -40px;
+    width: 160px;
+    height: 160px;
+    background: radial-gradient(circle, rgba(92, 107, 86, 0.3) 0%, transparent 70%);
     border-radius: 50%;
   }
 
-  .cta .container {
+  .about-card-inner blockquote {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-style: italic;
     position: relative;
-    z-index: 1;
+  }
+
+  .about-card-inner cite {
+    font-size: 0.82rem;
+    opacity: 0.5;
+    font-style: normal;
+  }
+
+  /* ===== CTA (mobile) ===== */
+  .cta {
+    background: var(--cream);
+    text-align: center;
+    padding: 64px 0 100px;
+    border-top: 1px solid var(--border);
+  }
+
+  .cta-content {
+    max-width: 580px;
+    margin: 0 auto;
   }
 
   .cta h2 {
-    font-size: 2.75rem;
-    font-weight: 800;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
     line-height: 1.15;
+    color: var(--text);
   }
 
-  .cta > .container > p {
-    font-size: 1.15rem;
-    opacity: 0.85;
-    margin-bottom: 40px;
-    max-width: 540px;
-    margin-left: auto;
-    margin-right: auto;
+  .cta h2 em {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .cta-content > p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 28px;
     line-height: 1.7;
   }
 
+  .cta .btn-lg { width: 100%; }
+
   .cta-note {
-    margin-top: 20px;
-    font-size: 0.85rem;
-    opacity: 0.6;
+    margin-top: 16px;
+    font-size: 0.78rem;
+    color: var(--text-faint);
   }
 
-  /* ===== FOOTER ===== */
+  /* ===== STICKY MOBILE CTA ===== */
+  .mobile-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 12px 20px calc(12px + env(safe-area-inset-bottom, 0px));
+    background: rgba(250, 248, 245, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid var(--border);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-cta.visible {
+    transform: translateY(0);
+  }
+
+  /* ===== FOOTER (mobile) ===== */
   .footer {
-    background: #0d0d1a;
-    color: rgba(255, 255, 255, 0.5);
-    padding: 60px 0 30px;
+    background: var(--charcoal-deep);
+    color: rgba(255,255,255,0.4);
+    padding: 48px 0 28px;
+    padding-bottom: calc(28px + 80px);
   }
 
-  .footer .logo {
-    color: #fff;
-  }
-
-  .footer .logo span {
-    color: #9f7aea;
-  }
+  .footer .logo { color: #fff; }
+  .footer .logo span { color: var(--sage-lighter); }
 
   .tagline {
-    font-size: 0.9rem;
+    font-size: 0.82rem;
     margin-top: 8px;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255,255,255,0.25);
   }
 
   .footer-content {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 40px;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 32px;
   }
 
   .footer-links {
-    display: flex;
-    gap: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
   }
 
   .footer-links a {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
+    padding: 4px 0;
     transition: color 0.2s;
+    -webkit-tap-highlight-color: transparent;
   }
 
-  .footer-links a:hover {
-    color: #6c63ff;
-  }
+  .footer-links a:hover { color: var(--sage-lighter); }
 
   .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
-    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 20px;
     display: flex;
-    justify-content: space-between;
-    font-size: 0.8rem;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.75rem;
   }
 
-  /* ===== RESPONSIVE ===== */
-  @media (max-width: 1024px) {
-    .hero .container {
-      grid-template-columns: 1fr;
-      gap: 48px;
-    }
+  /* ===========================================
+     sm: 640px+ (large phones / small tablets)
+     =========================================== */
+  @media (min-width: 640px) {
+    .container { padding: 0 24px; }
 
-    .hero-visual {
-      order: -1;
-    }
-
-    .hero h1 {
-      font-size: 2.75rem;
-    }
+    .hero h1 { font-size: 2.6rem; }
 
     .services-grid {
+      display: grid;
       grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
     }
 
-    .about .container {
-      grid-template-columns: 1fr;
-      gap: 48px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-    }
-
-    .nav-links.open {
-      display: flex;
+    .service-card {
       flex-direction: column;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background: #fff;
-      padding: 24px;
-      gap: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      gap: 0;
     }
 
-    .mobile-toggle {
-      display: flex;
-    }
+    .service-icon-wrap { margin-bottom: 16px; }
 
-    .hero {
-      padding: 120px 0 80px;
-    }
-
-    .hero h1 {
-      font-size: 2.1rem;
-    }
-
-    .hero-stats {
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-
-    .hero-buttons {
-      flex-direction: column;
-    }
-
-    .hero-buttons .btn {
-      text-align: center;
-      justify-content: center;
-    }
-
-    .section-title {
-      font-size: 1.75rem;
-    }
-
-    .services-grid,
     .steps {
-      grid-template-columns: 1fr;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
     }
 
     .about-values {
-      grid-template-columns: 1fr;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
     }
 
-    .cta h2 {
-      font-size: 2rem;
+    .stat-item strong { font-size: 1.75rem; }
+    .stat-item span { font-size: 0.78rem; }
+  }
+
+  /* ===========================================
+     md: 768px+ (tablets)
+     =========================================== */
+  @media (min-width: 768px) {
+    .section-header { margin-bottom: 52px; }
+    .section-title { font-size: 2.15rem; }
+
+    .hero { padding: 130px 0 60px; }
+    .hero h1 { font-size: 2.85rem; }
+
+    .hero-buttons {
+      flex-direction: row;
     }
+
+    .hero-buttons .btn {
+      width: auto;
+    }
+
+    .services { padding: 80px 0; }
+    .how-it-works { padding: 80px 0; }
+    .about { padding: 80px 0; }
+    .cta { padding: 80px 0; }
+    .cta .btn-lg { width: auto; }
+
+    .cta h2 { font-size: 2.4rem; }
 
     .footer-content {
-      flex-direction: column;
-      gap: 24px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 32px;
     }
 
     .footer-bottom {
-      flex-direction: column;
-      gap: 8px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  /* ===========================================
+     lg: 1024px+ (desktop)
+     =========================================== */
+  @media (min-width: 1024px) {
+    .section-header { margin-bottom: 60px; }
+    .section-title { font-size: 2.5rem; }
+    .section-subtitle { font-size: 1.02rem; }
+
+    /* Navbar — show links, hide toggle */
+    .navbar {
+      background: transparent;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      border-bottom: none;
+      padding: 16px 0;
+    }
+
+    .navbar.scrolled {
+      background: rgba(250, 248, 245, 0.9);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border-bottom: 1px solid var(--border-light);
+      padding: 12px 0;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
+
+    .nav-links a {
+      font-size: 0.85rem;
+      padding: 0;
+    }
+
+    .btn-nav {
+      width: auto;
+      padding: 10px 22px;
+      font-size: 0.82rem;
+    }
+
+    .mobile-toggle { display: none; }
+
+    /* Hero — side by side */
+    .hero { padding: 140px 0 80px; }
+
+    .hero .container {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .hero h1 { font-size: 3.25rem; letter-spacing: -0.5px; }
+    .hero-desc { font-size: 1.05rem; max-width: 440px; }
+
+    .hero-buttons .btn { width: auto; }
+
+    .hero-badge { font-size: 0.78rem; }
+
+    /* Dashboard sidebar visible */
+    .dash-sidebar {
+      display: block;
+      width: 120px;
+      border-right: 1px solid var(--border);
+      padding: 14px 0;
+      background: var(--cream);
+    }
+
+    .dash-nav-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      font-size: 0.68rem;
+      font-weight: 500;
+      color: var(--text-faint);
+      cursor: default;
+    }
+
+    .dash-nav-item.active {
+      color: var(--sage);
+      background: var(--sage-glow);
+      border-right: 2px solid var(--sage);
+    }
+
+    .dashboard { border-radius: var(--radius-lg); }
+    .dash-main { padding: 16px; }
+
+    /* Stats bar — flex with dividers */
+    .stats-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      padding: 32px 0;
+    }
+
+    .stat-sep {
+      display: block;
+      width: 1px;
+      height: 36px;
+      background: var(--border);
+    }
+
+    .stat-item { border-right: none !important; }
+    .stat-item strong { font-size: 1.85rem; }
+    .stat-item span { font-size: 0.8rem; }
+
+    /* Services grid */
+    .services { padding: 100px 0; }
+
+    .services-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service-card { padding: 30px 26px; }
+
+    /* Steps 2-col */
+    .how-it-works { padding: 100px 0; }
+
+    .steps {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      max-width: 860px;
+    }
+
+    .step-card { padding: 24px; }
+
+    /* About side by side */
+    .about { padding: 100px 0; }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 72px;
+      align-items: center;
+    }
+
+    .about-card-inner { padding: 48px 40px; }
+    .about-card-inner blockquote { font-size: 1.35rem; }
+
+    /* CTA */
+    .cta { padding: 100px 0; }
+    .cta h2 { font-size: 2.75rem; }
+
+    /* Hide sticky mobile CTA on desktop */
+    .mobile-cta { display: none; }
+
+    /* Footer — no extra bottom padding */
+    .footer { padding-bottom: 28px; }
+
+    /* Hover states — only on desktop */
+    .btn-primary:hover {
+      background: var(--stone-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(92, 107, 86, 0.2);
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--sage-lighter);
+      background: var(--sage-glow);
+      color: var(--sage);
+    }
+
+    .service-card:hover {
+      background: rgba(255,255,255,0.07);
+      border-color: rgba(163, 180, 155, 0.25);
+      transform: translateY(-2px);
+    }
+
+    .step-card:hover {
+      border-color: var(--sage-lighter);
+      box-shadow: 0 4px 16px rgba(92, 107, 86, 0.06);
+    }
+
+    .value-item:hover {
+      border-color: var(--sage-lighter);
     }
   }
 </style>
 
 <script>
-  // Navbar scroll effect
+  // Navbar scroll
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     navbar?.classList.toggle('scrolled', window.scrollY > 50);
-  });
+  }, { passive: true });
 
   // Mobile menu
   const mobileToggle = document.getElementById('mobileToggle');
@@ -1013,4 +1585,17 @@ import Layout from '../layouts/Layout.astro';
   navLinks?.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => navLinks?.classList.remove('open'));
   });
+
+  // Sticky mobile CTA — show after scrolling past hero
+  const mobileCta = document.getElementById('mobileCta');
+  const hero = document.querySelector('.hero');
+  if (mobileCta && hero) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        mobileCta.classList.toggle('visible', !entry.isIntersecting);
+      },
+      { threshold: 0, rootMargin: '-60px 0px 0px 0px' }
+    );
+    observer.observe(hero);
+  }
 </script>
