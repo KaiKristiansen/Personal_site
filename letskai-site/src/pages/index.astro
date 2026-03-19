@@ -452,10 +452,14 @@ import Layout from '../layouts/Layout.astro';
   .btn-nav {
     background: var(--sage);
     color: #fff !important;
-    padding: 14px 24px;
-    font-size: 0.9rem;
+    padding: 16px 24px;
+    font-size: 1rem;
     border-radius: var(--radius-sm);
     width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 12px;
+    border-bottom: none;
   }
 
   .btn-lg { padding: 18px 32px; font-size: 1rem; }
@@ -541,26 +545,26 @@ import Layout from '../layouts/Layout.astro';
   .nav-links.open {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
-    background: rgba(250, 248, 245, 0.98);
-    backdrop-filter: blur(20px);
-    padding: 16px 20px 24px;
-    gap: 4px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-    border-bottom: 1px solid var(--border);
+    bottom: 0;
+    background: var(--cream);
+    padding: 80px 24px 32px;
+    gap: 0;
+    z-index: 999;
   }
 
   .nav-links a {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: var(--text-muted);
-    padding: 14px 0;
+    padding: 16px 0;
     display: block;
     -webkit-tap-highlight-color: transparent;
     transition: color 0.2s;
+    border-bottom: 1px solid var(--border-light);
   }
 
   .mobile-toggle {
@@ -576,6 +580,8 @@ import Layout from '../layouts/Layout.astro';
     min-height: 44px;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 1001;
   }
 
   .mobile-toggle span {
