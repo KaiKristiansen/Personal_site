@@ -7,15 +7,7 @@ import Layout from '../layouts/Layout.astro';
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="#" class="logo">LetsK<span>AI</span></a>
-      <div class="nav-links" id="navLinks">
-        <a href="#services">Services</a>
-        <a href="#how-it-works">Process</a>
-        <a href="#about">About</a>
-        <a href="#cta" class="btn btn-nav">Book a Free Call</a>
-      </div>
-      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="#cta" class="btn btn-nav">Book a Call</a>
     </div>
   </nav>
 
@@ -24,39 +16,38 @@ import Layout from '../layouts/Layout.astro';
     <div class="hero-texture"></div>
     <div class="container">
       <div class="hero-content">
-        <div class="hero-badge">
-          <span class="badge-leaf">&#9672;</span>
-          For Contractors, Realtors &amp; Local Businesses
-        </div>
         <h1>
-          More jobs booked.<br/>Less time on <em>the phone.</em>
+          We implement AI to save you time<br/>and make your business <em>more money</em>
         </h1>
         <p class="hero-desc">
-          We set up simple AI systems that handle your follow-ups, scheduling,
-          and admin — so you can focus on the work that actually pays.
+          Simple AI systems for lead follow-up, scheduling, and admin —
+          set up for you, so you can focus on the work that pays.
         </p>
         <div class="hero-buttons">
           <a href="#cta" class="btn btn-primary">
-            Let's talk — free 15-min chat
+            Book a Call
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="#how-it-works" class="btn btn-ghost">See how it works ↓</a>
         </div>
-        <p class="hero-phone">Prefer to text? Reach us at <a href="sms:+1XXXXXXXXXX">(XXX) XXX-XXXX</a></p>
+        <div class="scroll-indicator" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
       </div>
       <div class="hero-visual">
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <div class="hero-stat-value">6 hrs</div>
-            <div class="hero-stat-label">saved per week on average</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-value">0 leads</div>
-            <div class="hero-stat-label">dropped with automated follow-up</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-value">2 weeks</div>
-            <div class="hero-stat-label">average time to go live</div>
+        <div class="phone-frame" aria-hidden="true">
+          <div class="phone-screen">
+            <div class="phone-header">
+              <span class="phone-contact">SteamDry Canada</span>
+              <span class="phone-ai-badge">AI Assistant</span>
+            </div>
+            <div class="imessage-chat">
+              <div class="msg msg-blue msg-1">Hey do you guys do gutters in Burnaby?</div>
+              <div class="typing-indicator typing-1"><span></span><span></span><span></span></div>
+              <div class="msg msg-gray msg-2">Hey! This is SteamDry Canada 👋 Yes we do! Want me to book a free estimate? I have Thursday and Friday open.</div>
+              <div class="msg msg-blue msg-3">Thursday works!</div>
+              <div class="typing-indicator typing-2"><span></span><span></span><span></span></div>
+              <div class="msg msg-gray msg-4">Done! Booked for Thursday 10am ✓ You'll get a reminder the day before.</div>
+            </div>
           </div>
         </div>
       </div>
@@ -68,32 +59,94 @@ import Layout from '../layouts/Layout.astro';
     <div class="container">
       <div class="section-header">
         <div class="section-label">What We Do</div>
-        <h2 class="section-title">Three ways <em>we help</em></h2>
-        <p class="section-subtitle">
-          No tech background needed. We handle the setup, you see the results.
-        </p>
+        <h2 class="section-title">3 ways we save you time and <em>make you more money</em></h2>
       </div>
       <div class="services-grid">
         <div class="service-card">
           <div class="service-icon-wrap">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="var(--sage-lighter)" stroke-width="1.5"/><path d="M21 21l-4.35-4.35" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="var(--sage-lighter)" stroke-width="1.5"/><path d="M14 2l4 0m0 0l0 4m0-4l-5 5" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3>Find the Gaps</h3>
-          <p>We look at where your business is losing time and money. Follow-ups falling through? Leads going cold? Scheduling chaos? We find it.</p>
+          <h3>Missed Call Text-Back</h3>
+          <p>You miss a call while on a job — a text goes out instantly. "Hey, sorry I missed you — how can I help?" Most leads reply in minutes.</p>
         </div>
         <div class="service-card">
           <div class="service-icon-wrap">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M17 1l4 4-4 4" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 11V9a4 4 0 014-4h14" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 23l-4-4 4-4" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 13v2a4 4 0 01-4 4H3" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3>Build the System</h3>
-          <p>We set up simple automations around your real workflows — follow-ups, booking, reminders, lead responses. No complicated software for you to learn.</p>
+          <h3>Automatic Follow-Ups</h3>
+          <p>Sent a quote but haven't heard back? The system follows up for you on day 1, 3, and 7. No more forgetting or chasing people.</p>
         </div>
         <div class="service-card">
           <div class="service-icon-wrap">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="var(--sage-lighter)" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="var(--sage-lighter)" stroke-width="1.5"/><path d="M16 2v4M8 2v4M3 10h18" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round"/><path d="M9 16l2 2 4-4" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3>Run It With You</h3>
-          <p>We don't hand you a manual and disappear. We train your team, monitor the systems, and keep improving them over time.</p>
+          <h3>AI Booking Assistant</h3>
+          <p>Customers text to book, confirm, or reschedule — and get a response right away. No phone tag, no back-and-forth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CASE STUDY ===== -->
+  <section class="case-study-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Real Results</div>
+        <h2 class="section-title">Who this has <em>proven to work for</em></h2>
+      </div>
+      <div class="case-study-grid">
+        <div class="pain-points">
+          <div class="pain-point">
+            <p class="pain-quote">"Lost another lead 'cause no one answered"</p>
+            <p class="pain-solve">→ Missed call text-back</p>
+          </div>
+          <div class="pain-point">
+            <p class="pain-quote">"I quoted them and totally forgot to follow up"</p>
+            <p class="pain-solve">→ Auto follow-ups</p>
+          </div>
+          <div class="pain-point">
+            <p class="pain-quote">"Third no-show this week. Unreal."</p>
+            <p class="pain-solve">→ Smart reminders</p>
+          </div>
+          <div class="pain-point">
+            <p class="pain-quote">"More time on my phone than on jobs"</p>
+            <p class="pain-solve">→ AI assistant</p>
+          </div>
+          <div class="pain-point">
+            <p class="pain-quote">"Other guy texted back first. Lost it."</p>
+            <p class="pain-solve">→ Instant response</p>
+          </div>
+        </div>
+        <div class="case-study-doc">
+          <div class="doc-badge">Case Study</div>
+          <h3 class="doc-company">SteamDry Canada</h3>
+          <p class="doc-subtitle">Gutter Cleaning &amp; Exterior Services · Vancouver, BC</p>
+          <div class="doc-section">
+            <h4>The Problem</h4>
+            <p>Mark was missing 5–8 calls per week while on jobs. By the time he called back, leads had already booked someone else. Quote follow-ups were hit-or-miss, and scheduling was done through texts and sticky notes.</p>
+          </div>
+          <div class="doc-section">
+            <h4>What We Set Up</h4>
+            <ul>
+              <li>Missed call text-back — auto-responds in under 30 seconds</li>
+              <li>Automated quote follow-ups on day 1, 3, and 7</li>
+              <li>AI booking assistant via text message</li>
+            </ul>
+          </div>
+          <div class="doc-results">
+            <div class="doc-result">
+              <strong>+43%</strong>
+              <span>more jobs booked</span>
+            </div>
+            <div class="doc-result">
+              <strong>6.5 hrs</strong>
+              <span>saved per week</span>
+            </div>
+            <div class="doc-result">
+              <strong>0</strong>
+              <span>missed leads in 60 days</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -102,20 +155,31 @@ import Layout from '../layouts/Layout.astro';
   <!-- ===== TESTIMONIALS ===== -->
   <section class="testimonials">
     <div class="container">
+      <p class="trust-line">Helping businesses in the Vancouver area</p>
       <div class="testimonials-grid">
         <div class="testimonial-card">
-          <blockquote>"KAI set up our missed-call follow-up system in a week. We're booking 4–5 more jobs a month just from leads we used to lose."</blockquote>
-          <div class="testimonial-author">
-            <strong>Dave M.</strong>
-            <span>HVAC Owner</span>
+          <div class="testimonial-top">
+            <div class="testimonial-logo">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#1E2D3D"/><text x="20" y="26" text-anchor="middle" fill="#fff" font-family="Lora, serif" font-size="14" font-weight="700">DM</text></svg>
+            </div>
+            <div class="testimonial-author">
+              <strong>Dave M.</strong>
+              <span>DM Heating &amp; Air · HVAC</span>
+            </div>
           </div>
+          <blockquote>"KAI set up our missed-call follow-up system in a week. We're booking 4–5 more jobs a month just from leads we used to lose."</blockquote>
         </div>
         <div class="testimonial-card">
-          <blockquote>"I was skeptical about AI but they made it simple. My listing follow-ups now go out automatically and clients think I'm incredibly responsive."</blockquote>
-          <div class="testimonial-author">
-            <strong>Sarah T.</strong>
-            <span>Realtor</span>
+          <div class="testimonial-top">
+            <div class="testimonial-logo">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#C45C2E"/><text x="20" y="26" text-anchor="middle" fill="#fff" font-family="Lora, serif" font-size="14" font-weight="700">ST</text></svg>
+            </div>
+            <div class="testimonial-author">
+              <strong>Sarah T.</strong>
+              <span>Thomas Realty · Realtor</span>
+            </div>
           </div>
+          <blockquote>"I was skeptical about AI but they made it simple. My listing follow-ups now go out automatically and clients think I'm incredibly responsive."</blockquote>
         </div>
       </div>
     </div>
@@ -126,10 +190,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="container">
       <div class="section-header">
         <div class="section-label">Our Process</div>
-        <h2 class="section-title">How <em>it works</em></h2>
-        <p class="section-subtitle">
-          Simple process. Real results. No jargon.
-        </p>
+        <h2 class="section-title">4 steps to improving <em>your operations</em></h2>
       </div>
       <div class="steps">
         <div class="step">
@@ -137,8 +198,8 @@ import Layout from '../layouts/Layout.astro';
             <div class="step-number">1</div>
           </div>
           <div class="step-card">
-            <h3>We Audit Your Workflows</h3>
-            <p>We look at how your team actually works — the tools, the steps, the bottlenecks. No generic templates.</p>
+            <h3>We Learn About Your Business</h3>
+            <p>We ask simple questions about how your day runs — where time gets wasted, what falls through the cracks, and what slows you down.</p>
             <div class="step-mockup">
               <div class="mockup-bar"></div>
               <div class="mockup-lines">
@@ -155,8 +216,8 @@ import Layout from '../layouts/Layout.astro';
             <div class="step-number">2</div>
           </div>
           <div class="step-card">
-            <h3>We Design the Automation</h3>
-            <p>We map out exactly what gets automated, how it connects to your existing tools, and what changes for your team.</p>
+            <h3>We Build a Plan That Fits</h3>
+            <p>We create a tailored solution designed around your specific needs — not a one-size-fits-all package.</p>
             <div class="step-mockup">
               <div class="mockup-flow">
                 <div class="flow-node">Input</div>
@@ -173,13 +234,13 @@ import Layout from '../layouts/Layout.astro';
             <div class="step-number">3</div>
           </div>
           <div class="step-card">
-            <h3>We Build &amp; Launch</h3>
-            <p>We build the workflows, test them thoroughly, and deploy them into your business — with training included.</p>
+            <h3>We Set Everything Up</h3>
+            <p>We handle the tech, connect it to your tools, and test everything before it goes live. Training included — no manuals to read.</p>
             <div class="step-mockup">
               <div class="mockup-checklist">
-                <div class="check-row done"><span>&#10003;</span> Build workflows</div>
-                <div class="check-row done"><span>&#10003;</span> Run tests</div>
-                <div class="check-row done"><span>&#10003;</span> Deploy &amp; train</div>
+                <div class="check-row done"><span>&#10003;</span> Build it out</div>
+                <div class="check-row done"><span>&#10003;</span> Test everything</div>
+                <div class="check-row done"><span>&#10003;</span> Go live + train your team</div>
               </div>
             </div>
           </div>
@@ -189,67 +250,18 @@ import Layout from '../layouts/Layout.astro';
             <div class="step-number">4</div>
           </div>
           <div class="step-card">
-            <h3>We Monitor &amp; Improve</h3>
-            <p>Automations aren't set-and-forget. We track performance, fix issues, and optimize over time.</p>
+            <h3>We Stay With You</h3>
+            <p>We check in regularly, fix anything that comes up, and keep improving the system as your business grows. You're never on your own.</p>
             <div class="step-mockup">
-              <div class="mockup-graph">
-                <div class="graph-bar" style="height:30%"></div>
-                <div class="graph-bar" style="height:50%"></div>
-                <div class="graph-bar" style="height:45%"></div>
-                <div class="graph-bar" style="height:70%"></div>
-                <div class="graph-bar" style="height:65%"></div>
-                <div class="graph-bar accent" style="height:90%"></div>
+              <div class="mockup-flow">
+                <div class="flow-node active">Check</div>
+                <div class="flow-arrow">&rarr;</div>
+                <div class="flow-node">Tune</div>
+                <div class="flow-arrow">&rarr;</div>
+                <div class="flow-node">Repeat</div>
+                <div class="flow-arrow">&#8635;</div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ABOUT ===== -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <div class="section-label">About LetsK AI</div>
-          <h2 class="section-title">We built this for business owners, <em>not tech teams.</em></h2>
-          <p>
-            We started KAI because we kept seeing the same problem — owners spending
-            half their day chasing leads, confirming appointments, and doing admin that
-            a computer could handle. We build the systems, train your team, and make
-            sure it actually works for how you run your business.
-          </p>
-          <div class="about-values">
-            <div class="value-item">
-              <div class="value-dot"></div>
-              <div>
-                <strong>Results You Can See</strong>
-                <p>Every system is tied to a real outcome: more jobs booked, fewer missed calls, hours back in your week.</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <div class="value-dot"></div>
-              <div>
-                <strong>Plain and Simple</strong>
-                <p>No tech jargon. We explain everything in plain language and train your team to use it confidently.</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <div class="value-dot"></div>
-              <div>
-                <strong>We're Here After Day One</strong>
-                <p>We don't disappear after setup. We monitor, improve, and stay available when you need us.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="about-card">
-          <div class="about-card-inner">
-            <blockquote>
-              "We ask one question before recommending anything: will this actually make your week easier?"
-            </blockquote>
-            <cite>— The LetsK AI Team</cite>
           </div>
         </div>
       </div>
@@ -260,13 +272,12 @@ import Layout from '../layouts/Layout.astro';
   <section class="cta" id="cta">
     <div class="container">
       <div class="cta-content">
-        <h2>Sound like something your <em>business needs?</em></h2>
+        <h2>Ready to see what AI can do for <em>your business?</em></h2>
         <p>
-          Let's have a quick chat — no commitment, no pitch. Just an honest
-          look at what we can do for you.
+          Click below to view Kai's remaining availability and book a time that works for you.
         </p>
         <a href="https://calendly.com/haurno/30min" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
-          Book a free 15-min chat
+          Book a Call
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
         <p class="cta-note">Free. No obligation. Most people walk away with at least one idea they can use right away.</p>
@@ -285,7 +296,6 @@ import Layout from '../layouts/Layout.astro';
         <div class="footer-links">
           <a href="#services">Services</a>
           <a href="#how-it-works">Process</a>
-          <a href="#about">About</a>
           <a href="#cta">Contact</a>
         </div>
       </div>
@@ -299,7 +309,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- Sticky mobile CTA -->
   <div class="mobile-cta" id="mobileCta">
     <a href="#cta" class="btn btn-primary btn-mobile-cta">
-      Book a free 15-min chat
+      Book a Call
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
   </div>
@@ -321,12 +331,11 @@ import Layout from '../layouts/Layout.astro';
     padding: 0 20px;
   }
 
-  /* Headings & logo — warm serif */
   h1, h2, h3, .logo {
     font-family: 'Lora', Georgia, serif;
   }
 
-  /* Buttons — large touch targets (min 48px), pill shape */
+  /* Buttons — pill shape, large touch targets */
   .btn {
     display: inline-flex;
     align-items: center;
@@ -350,27 +359,15 @@ import Layout from '../layouts/Layout.astro';
     box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   }
 
-  .btn-primary:active {
-    transform: scale(0.98);
-  }
-
-  .btn-ghost {
-    background: transparent;
-    color: var(--text);
-    border: 1.5px solid var(--border);
-  }
+  .btn-primary:active { transform: scale(0.98); }
 
   .btn-nav {
     background: var(--sage);
     color: #fff !important;
-    padding: 16px 24px;
-    font-size: 1rem;
+    padding: 10px 20px;
+    font-size: 0.85rem;
     border-radius: 2rem;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    margin-top: 12px;
-    border-bottom: none;
+    min-height: auto;
   }
 
   .btn-lg { padding: 18px 32px; font-size: 1rem; }
@@ -412,14 +409,6 @@ import Layout from '../layouts/Layout.astro';
     font-weight: 400;
   }
 
-  .section-subtitle {
-    font-size: 0.95rem;
-    color: var(--text-muted);
-    max-width: 540px;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-
   .logo {
     font-size: 1.35rem;
     font-weight: 700;
@@ -429,7 +418,7 @@ import Layout from '../layouts/Layout.astro';
 
   .logo span { color: var(--sage); }
 
-  /* ===== NAVBAR (mobile) ===== */
+  /* ===== NAVBAR ===== */
   .navbar {
     position: fixed;
     top: 0;
@@ -448,60 +437,6 @@ import Layout from '../layouts/Layout.astro';
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .nav-links.open {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--cream);
-    padding: 80px 24px 32px;
-    gap: 0;
-    z-index: 999;
-  }
-
-  .nav-links a {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--text-muted);
-    padding: 16px 0;
-    display: block;
-    -webkit-tap-highlight-color: transparent;
-    transition: color 0.2s;
-    border-bottom: 1px solid var(--border-light);
-  }
-
-  .mobile-toggle {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    padding: 8px;
-    -webkit-tap-highlight-color: transparent;
-    min-width: 44px;
-    min-height: 44px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1001;
-  }
-
-  .mobile-toggle span {
-    width: 22px;
-    height: 2px;
-    background: var(--text);
-    border-radius: 2px;
-    transition: all 0.3s;
   }
 
   /* ===== HERO (mobile) ===== */
@@ -527,23 +462,6 @@ import Layout from '../layouts/Layout.astro';
     position: relative;
     z-index: 1;
   }
-
-  .hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--warm-white);
-    border: 1px solid var(--border);
-    padding: 7px 14px;
-    border-radius: 100px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--sage);
-    margin-bottom: 8px;
-    align-self: flex-start;
-  }
-
-  .badge-leaf { color: var(--sage-light); }
 
   .hero h1 {
     font-size: 2.25rem;
@@ -573,57 +491,169 @@ import Layout from '../layouts/Layout.astro';
     gap: 12px;
   }
 
-  .hero-buttons .btn {
-    width: 100%;
+  .hero-buttons .btn { width: 100%; }
+
+  /* Scroll indicator */
+  .scroll-indicator {
+    margin-top: 28px;
+    color: var(--text-faint);
+    opacity: 0.5;
   }
 
-  .hero-phone {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    margin-top: 16px;
+  .scroll-indicator svg {
+    animation: scrollBounce 2.5s ease-in-out infinite;
   }
 
-  .hero-phone a {
-    color: var(--sage);
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-color: rgba(196, 92, 46, 0.3);
-    text-underline-offset: 2px;
+  @keyframes scrollBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
   }
 
-  /* ===== HERO STATS (mobile) ===== */
-  .hero-stats {
+  /* ===== PHONE MOCKUP ===== */
+  .hero-visual {
     display: flex;
-    background: var(--warm-white);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
+    justify-content: center;
+  }
+
+  .phone-frame {
+    background: #000;
+    border-radius: 32px;
+    padding: 6px;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+
+  .phone-screen {
+    background: #f2f2f7;
+    border-radius: 26px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.03), 0 8px 24px rgba(0, 0, 0, 0.05);
   }
 
-  .hero-stat {
-    flex: 1;
-    text-align: center;
-    padding: 20px 12px;
+  .phone-header {
+    background: #f9f9f9;
+    padding: 14px 16px 10px;
+    border-bottom: 1px solid #e5e5ea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
   }
 
-  .hero-stat:not(:last-child) {
-    border-right: 1px solid var(--border-light);
-  }
-
-  .hero-stat-value {
-    font-family: 'Lora', Georgia, serif;
-    font-size: 1.5rem;
+  .phone-contact {
+    font-size: 0.82rem;
     font-weight: 700;
-    color: var(--sage);
-    line-height: 1;
-    margin-bottom: 6px;
+    color: #1c1c1e;
+    font-family: 'Nunito', sans-serif;
   }
 
-  .hero-stat-label {
-    font-size: 0.68rem;
-    color: var(--text-muted);
+  .phone-ai-badge {
+    font-size: 0.6rem;
+    color: #8e8e93;
+    background: #e5e5ea;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .imessage-chat {
+    padding: 14px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-height: 250px;
+  }
+
+  .msg {
+    max-width: 84%;
+    padding: 8px 12px;
+    border-radius: 18px;
+    font-size: 0.78rem;
     line-height: 1.4;
+    opacity: 0;
+    transform: translateY(8px);
+    font-family: 'Nunito', -apple-system, sans-serif;
+  }
+
+  .msg-blue {
+    background: #007AFF;
+    color: #fff;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+  }
+
+  .msg-gray {
+    background: #e9e9eb;
+    color: #1c1c1e;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+  }
+
+  /* Typing indicator */
+  .typing-indicator {
+    align-self: flex-start;
+    display: flex;
+    gap: 4px;
+    padding: 10px 14px;
+    background: #e9e9eb;
+    border-radius: 18px;
+    border-bottom-left-radius: 4px;
+    opacity: 0;
+  }
+
+  .typing-indicator span {
+    width: 6px;
+    height: 6px;
+    background: #8e8e93;
+    border-radius: 50%;
+    animation: typingDot 1.4s infinite;
+  }
+
+  .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+  .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+  @keyframes typingDot {
+    0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+    30% { transform: translateY(-3px); opacity: 1; }
+  }
+
+  /* Message animation cycle — 14s loop */
+  .msg-1 { animation: msg1A 14s ease-out infinite; }
+  .typing-1 { animation: type1A 14s ease-out infinite; }
+  .msg-2 { animation: msg2A 14s ease-out infinite; }
+  .msg-3 { animation: msg3A 14s ease-out infinite; }
+  .typing-2 { animation: type2A 14s ease-out infinite; }
+  .msg-4 { animation: msg4A 14s ease-out infinite; }
+
+  @keyframes msg1A {
+    0%, 3% { opacity: 0; transform: translateY(8px); }
+    6%, 86% { opacity: 1; transform: translateY(0); }
+    93%, 100% { opacity: 0; transform: translateY(0); }
+  }
+  @keyframes type1A {
+    0%, 13% { opacity: 0; }
+    16%, 23% { opacity: 1; }
+    24%, 100% { opacity: 0; }
+  }
+  @keyframes msg2A {
+    0%, 23% { opacity: 0; transform: translateY(8px); }
+    26%, 86% { opacity: 1; transform: translateY(0); }
+    93%, 100% { opacity: 0; transform: translateY(0); }
+  }
+  @keyframes msg3A {
+    0%, 38% { opacity: 0; transform: translateY(8px); }
+    41%, 86% { opacity: 1; transform: translateY(0); }
+    93%, 100% { opacity: 0; transform: translateY(0); }
+  }
+  @keyframes type2A {
+    0%, 48% { opacity: 0; }
+    51%, 58% { opacity: 1; }
+    59%, 100% { opacity: 0; }
+  }
+  @keyframes msg4A {
+    0%, 58% { opacity: 0; transform: translateY(8px); }
+    61%, 86% { opacity: 1; transform: translateY(0); }
+    93%, 100% { opacity: 0; transform: translateY(0); }
   }
 
   /* ===== SERVICES (mobile) ===== */
@@ -635,7 +665,6 @@ import Layout from '../layouts/Layout.astro';
   .services .section-label { color: var(--sage-lighter); }
   .services .section-title { color: #fff; }
   .services .section-title em { color: var(--sand); }
-  .services .section-subtitle { color: rgba(255,255,255,0.45); }
 
   .services-grid {
     display: flex;
@@ -663,7 +692,6 @@ import Layout from '../layouts/Layout.astro';
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    margin-bottom: 0;
   }
 
   .service-card h3 {
@@ -679,11 +707,168 @@ import Layout from '../layouts/Layout.astro';
     line-height: 1.6;
   }
 
+  /* ===== CASE STUDY (mobile) ===== */
+  .case-study-section {
+    padding: 64px 0;
+    background: var(--warm-white);
+  }
+
+  .case-study-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .pain-points {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pain-point {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+  }
+
+  .pain-quote {
+    font-style: italic;
+    color: var(--text);
+    font-size: 0.88rem;
+    line-height: 1.4;
+    margin-bottom: 4px;
+  }
+
+  .pain-solve {
+    font-size: 0.72rem;
+    color: var(--sage);
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  /* Case study document */
+  .case-study-doc {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 28px 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03);
+    max-height: 420px;
+    overflow-y: auto;
+  }
+
+  .doc-badge {
+    display: inline-block;
+    font-size: 0.62rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--sage);
+    background: var(--sage-glow);
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .doc-company {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .doc-subtitle {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+
+  .doc-section {
+    margin-bottom: 18px;
+  }
+
+  .doc-section h4 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text);
+    margin-bottom: 8px;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .doc-section p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  .doc-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .doc-section li {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    padding: 3px 0;
+    padding-left: 16px;
+    position: relative;
+  }
+
+  .doc-section li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--sage);
+    font-weight: 700;
+  }
+
+  .doc-results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border-light);
+  }
+
+  .doc-result {
+    text-align: center;
+  }
+
+  .doc-result strong {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--sage);
+    font-family: 'Lora', serif;
+    margin-bottom: 2px;
+  }
+
+  .doc-result span {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+  }
+
   /* ===== TESTIMONIALS (mobile) ===== */
   .testimonials {
     padding: 64px 0;
     background: var(--cream);
     border-top: 1px solid var(--border);
+  }
+
+  .trust-line {
+    text-align: center;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-faint);
+    margin-bottom: 28px;
   }
 
   .testimonials-grid {
@@ -696,23 +881,26 @@ import Layout from '../layouts/Layout.astro';
     background: var(--warm-white);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 28px 24px;
-    border-left: 3px solid var(--sage);
+    padding: 24px 22px;
+    transition: all 0.25s ease;
   }
 
-  .testimonial-card blockquote {
-    font-family: 'Lora', Georgia, serif;
-    font-size: 0.95rem;
-    color: var(--text);
-    line-height: 1.7;
-    margin-bottom: 16px;
-    font-style: italic;
+  .testimonial-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .testimonial-logo {
+    flex-shrink: 0;
+    line-height: 0;
   }
 
   .testimonial-author {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 1px;
   }
 
   .testimonial-author strong {
@@ -721,8 +909,16 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .testimonial-author span {
-    font-size: 0.78rem;
+    font-size: 0.75rem;
     color: var(--text-muted);
+  }
+
+  .testimonial-card blockquote {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 0.92rem;
+    color: var(--text);
+    line-height: 1.7;
+    font-style: italic;
   }
 
   /* ===== HOW IT WORKS (mobile) ===== */
@@ -863,124 +1059,6 @@ import Layout from '../layouts/Layout.astro';
 
   .check-row span { color: var(--sage); font-size: 0.68rem; }
 
-  .mockup-graph {
-    display: flex;
-    align-items: flex-end;
-    gap: 5px;
-    height: 44px;
-  }
-
-  .graph-bar {
-    flex: 1;
-    background: var(--border);
-    border-radius: 3px 3px 0 0;
-  }
-
-  .graph-bar.accent { background: var(--sage); }
-
-  /* ===== ABOUT (mobile) ===== */
-  .about {
-    padding: 64px 0;
-    background: var(--warm-white);
-  }
-
-  .about-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .about-text .section-label { margin-bottom: 12px; }
-  .about-text .section-title {
-    margin-bottom: 16px;
-    text-align: left;
-  }
-
-  .about-text > p {
-    font-size: 0.95rem;
-    color: var(--text-muted);
-    line-height: 1.75;
-    margin-bottom: 14px;
-  }
-
-  .about-values {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 28px;
-  }
-
-  .value-item {
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-    padding: 18px;
-    background: var(--cream);
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--border);
-    transition: border-color 0.25s ease;
-  }
-
-  .value-dot {
-    width: 8px;
-    height: 8px;
-    background: var(--sage);
-    border-radius: 50%;
-    flex-shrink: 0;
-    margin-top: 5px;
-  }
-
-  .value-item strong {
-    display: block;
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 3px;
-    color: var(--text);
-  }
-
-  .value-item p {
-    font-size: 0.82rem;
-    color: var(--text-muted);
-    margin-bottom: 0;
-    line-height: 1.5;
-  }
-
-  .about-card-inner {
-    background: var(--charcoal-deep);
-    border-radius: var(--radius-lg);
-    padding: 36px 28px;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .about-card-inner::before {
-    content: '';
-    position: absolute;
-    top: -40px;
-    right: -40px;
-    width: 160px;
-    height: 160px;
-    background: radial-gradient(circle, rgba(196, 92, 46, 0.3) 0%, transparent 70%);
-    border-radius: 50%;
-  }
-
-  .about-card-inner blockquote {
-    font-family: 'Lora', Georgia, serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    font-style: italic;
-    position: relative;
-  }
-
-  .about-card-inner cite {
-    font-size: 0.82rem;
-    opacity: 0.5;
-    font-style: normal;
-  }
-
   /* ===== CTA (mobile) ===== */
   .cta {
     background: var(--cream);
@@ -1039,9 +1117,7 @@ import Layout from '../layouts/Layout.astro';
     transition: transform 0.3s ease;
   }
 
-  .mobile-cta.visible {
-    transform: translateY(0);
-  }
+  .mobile-cta.visible { transform: translateY(0); }
 
   /* ===== FOOTER (mobile) ===== */
   .footer {
@@ -1068,9 +1144,8 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .footer-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    display: flex;
+    gap: 24px;
   }
 
   .footer-links a {
@@ -1099,8 +1174,7 @@ import Layout from '../layouts/Layout.astro';
 
     .hero h1 { font-size: 2.6rem; }
 
-    .hero-stat-value { font-size: 1.65rem; }
-    .hero-stat-label { font-size: 0.72rem; }
+    .phone-frame { max-width: 320px; }
 
     .services-grid {
       display: grid;
@@ -1127,12 +1201,6 @@ import Layout from '../layouts/Layout.astro';
       grid-template-columns: repeat(2, 1fr);
       gap: 18px;
     }
-
-    .about-values {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-    }
   }
 
   /* ===========================================
@@ -1145,29 +1213,30 @@ import Layout from '../layouts/Layout.astro';
     .hero { padding: 130px 0 60px; }
     .hero h1 { font-size: 2.85rem; }
 
-    .hero-buttons {
-      flex-direction: row;
-    }
+    .hero-buttons { flex-direction: row; }
+    .hero-buttons .btn { width: auto; }
 
-    .hero-buttons .btn {
-      width: auto;
-    }
-
-    .hero-stat { padding: 24px 16px; }
-    .hero-stat-value { font-size: 1.75rem; }
-    .hero-stat-label { font-size: 0.78rem; }
+    .phone-frame { max-width: 340px; }
+    .msg { font-size: 0.82rem; }
 
     .services { padding: 80px 0; }
 
+    .case-study-section { padding: 80px 0; }
+    .case-study-grid {
+      flex-direction: row;
+      gap: 32px;
+      align-items: flex-start;
+    }
+    .pain-points { flex: 1; }
+    .case-study-doc { flex: 1; }
+
     .testimonials { padding: 80px 0; }
     .testimonials-grid { gap: 20px; }
-    .testimonial-card { padding: 32px 28px; }
+    .testimonial-card { padding: 28px 24px; }
 
     .how-it-works { padding: 80px 0; }
-    .about { padding: 80px 0; }
     .cta { padding: 80px 0; }
     .cta .btn-lg { width: auto; }
-
     .cta h2 { font-size: 2.4rem; }
 
     .footer-content {
@@ -1176,10 +1245,7 @@ import Layout from '../layouts/Layout.astro';
       align-items: flex-start;
     }
 
-    .footer-links {
-      display: flex;
-      gap: 32px;
-    }
+    .footer-links { gap: 32px; }
 
     .footer-bottom {
       flex-direction: row;
@@ -1193,9 +1259,8 @@ import Layout from '../layouts/Layout.astro';
   @media (min-width: 1024px) {
     .section-header { margin-bottom: 60px; }
     .section-title { font-size: 2.5rem; }
-    .section-subtitle { font-size: 1.02rem; }
 
-    /* Navbar — show links, hide toggle */
+    /* Navbar */
     .navbar {
       background: transparent;
       backdrop-filter: none;
@@ -1212,29 +1277,10 @@ import Layout from '../layouts/Layout.astro';
       padding: 12px 0;
     }
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 36px;
-    }
-
-    .nav-links a {
-      font-size: 0.85rem;
-      padding: 0;
-      border-bottom: none;
-    }
-
     .btn-nav {
-      width: auto;
       padding: 12px 28px;
       font-size: 0.9rem;
-      min-height: auto;
-      border-radius: 2rem;
-      margin-top: 0;
-      border-bottom: none;
     }
-
-    .mobile-toggle { display: none; }
 
     /* Hero — side by side */
     .hero { padding: 140px 0 80px; }
@@ -1248,36 +1294,14 @@ import Layout from '../layouts/Layout.astro';
 
     .hero h1 { font-size: 3.25rem; letter-spacing: -0.5px; }
     .hero-desc { font-size: 1.05rem; max-width: 440px; }
-
     .hero-buttons .btn { width: auto; }
 
-    .hero-badge { font-size: 0.78rem; }
+    /* Phone mockup */
+    .phone-frame { max-width: 340px; }
+    .imessage-chat { min-height: 280px; padding: 16px 12px; gap: 8px; }
+    .msg { font-size: 0.85rem; padding: 10px 14px; }
 
-    /* Hero stats — vertical card on desktop */
-    .hero-stats {
-      flex-direction: column;
-      border-radius: var(--radius-lg);
-    }
-
-    .hero-stat {
-      text-align: left;
-      padding: 28px 32px;
-    }
-
-    .hero-stat:not(:last-child) {
-      border-right: none;
-      border-bottom: 1px solid var(--border-light);
-    }
-
-    .hero-stat-value {
-      font-size: 2.25rem;
-    }
-
-    .hero-stat-label {
-      font-size: 0.82rem;
-    }
-
-    /* Services grid */
+    /* Services */
     .services { padding: 100px 0; }
 
     .services-grid {
@@ -1287,12 +1311,24 @@ import Layout from '../layouts/Layout.astro';
 
     .service-card { padding: 30px 26px; }
 
+    /* Case study */
+    .case-study-section { padding: 100px 0; }
+
+    .case-study-grid {
+      gap: 48px;
+    }
+
+    .case-study-doc {
+      padding: 32px 28px;
+      max-height: none;
+    }
+
     /* Testimonials */
     .testimonials { padding: 100px 0; }
-    .testimonial-card { padding: 36px 32px; }
-    .testimonial-card blockquote { font-size: 1rem; }
+    .testimonial-card { padding: 32px 28px; }
+    .testimonial-card blockquote { font-size: 0.95rem; }
 
-    /* Steps 2-col */
+    /* Steps */
     .how-it-works { padding: 100px 0; }
 
     .steps {
@@ -1303,40 +1339,21 @@ import Layout from '../layouts/Layout.astro';
 
     .step-card { padding: 24px; }
 
-    /* About side by side */
-    .about { padding: 100px 0; }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 72px;
-      align-items: center;
-    }
-
-    .about-card-inner { padding: 48px 40px; }
-    .about-card-inner blockquote { font-size: 1.35rem; }
-
     /* CTA */
     .cta { padding: 100px 0; }
     .cta h2 { font-size: 2.75rem; }
 
-    /* Hide sticky mobile CTA on desktop */
+    /* Hide sticky mobile CTA */
     .mobile-cta { display: none; }
 
-    /* Footer — no extra bottom padding */
+    /* Footer */
     .footer { padding-bottom: 28px; }
 
-    /* Hover states — only on desktop */
+    /* Hover states */
     .btn-primary:hover {
       background: #a84d25;
       transform: translateY(-1px);
       box-shadow: 0 4px 16px rgba(196, 92, 46, 0.2);
-    }
-
-    .btn-ghost:hover {
-      border-color: var(--sage-lighter);
-      background: var(--sage-glow);
-      color: var(--sage);
     }
 
     .service-card:hover {
@@ -1350,14 +1367,25 @@ import Layout from '../layouts/Layout.astro';
       box-shadow: 0 4px 16px rgba(196, 92, 46, 0.06);
     }
 
-    .value-item:hover {
-      border-color: var(--sage-lighter);
-    }
-
     .testimonial-card:hover {
       border-color: var(--sage-lighter);
       box-shadow: 0 4px 16px rgba(196, 92, 46, 0.06);
     }
+
+    .pain-point:hover {
+      border-color: var(--sage-lighter);
+    }
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .msg, .typing-indicator {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    .typing-indicator { display: none; }
+    .scroll-indicator svg { animation: none; }
   }
 </style>
 
@@ -1367,16 +1395,6 @@ import Layout from '../layouts/Layout.astro';
   window.addEventListener('scroll', () => {
     navbar?.classList.toggle('scrolled', window.scrollY > 50);
   }, { passive: true });
-
-  // Mobile menu
-  const mobileToggle = document.getElementById('mobileToggle');
-  const navLinks = document.getElementById('navLinks');
-  mobileToggle?.addEventListener('click', () => {
-    navLinks?.classList.toggle('open');
-  });
-  navLinks?.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => navLinks?.classList.remove('open'));
-  });
 
   // Sticky mobile CTA — show after scrolling past hero
   const mobileCta = document.getElementById('mobileCta');
