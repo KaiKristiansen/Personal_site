@@ -7,7 +7,7 @@ import Layout from '../layouts/Layout.astro';
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="#" class="logo">LetsK<span>AI</span></a>
-      <a href="#cta" class="btn btn-nav">Book a Call</a>
+      <a href="https://calendly.com/haurno/30min" target="_blank" rel="noopener" class="btn btn-nav">Book a Call</a>
     </div>
   </nav>
 
@@ -16,9 +16,9 @@ import Layout from '../layouts/Layout.astro';
     <div class="hero-texture"></div>
     <div class="container">
       <div class="hero-content">
-        <h1>How are you taking advantage of AI in 2026?</h1>
+        <h1>Never lose a customer due to a missed call again.</h1>
         <p class="hero-desc">
-          We keep it simple, integrate AI, save time and make more money.
+          We have saved business owners from 136 missed customers using our text-back technology.
         </p>
         <div class="hero-buttons">
           <a href="#cta" class="btn btn-primary">
@@ -41,18 +41,22 @@ import Layout from '../layouts/Layout.astro';
                 <div class="contact-avatar">
                   <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="18" fill="#c7c7cc"/><circle cx="18" cy="14" r="5.5" fill="#fff"/><ellipse cx="18" cy="28" rx="9" ry="6" fill="#fff"/></svg>
                 </div>
-                <span class="phone-contact">SteamDry Canada</span>
-                <span class="phone-meta">iMessage · Today</span>
+                <span class="phone-contact">+1 (604) 360-8154</span>
+                <span class="phone-meta">SMS · Today</span>
               </div>
               <div class="phone-header-spacer"></div>
             </div>
             <div class="imessage-chat">
-              <div class="msg msg-gray msg-1">Hey do you guys do gutters in Saanich?</div>
+              <div class="missed-call-notice">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#ff3b30" stroke-width="2"/><line x1="18" y1="6" x2="6" y2="18" stroke="#ff3b30" stroke-width="2" stroke-linecap="round"/></svg>
+                <span>Missed Call · 10:33 AM</span>
+              </div>
+              <div class="msg msg-blue msg-blue-1">Hey, this is Mark from SteamDry Canada. Sorry we missed your call! Did you want to book a clean with us?</div>
               <div class="typing-indicator typing-1"><span></span><span></span><span></span></div>
-              <div class="msg msg-blue msg-2">Hey! This is SteamDry Canada 👋 Yes we do! Want me to book a free estimate? I have Thursday and Friday open.</div>
-              <div class="msg msg-gray msg-3">Thursday works!</div>
-              <div class="typing-indicator typing-2"><span></span><span></span><span></span></div>
-              <div class="msg msg-blue msg-4">Done! Booked for Thursday 10am ✓ You'll get a reminder the day before.</div>
+              <div class="msg msg-gray msg-gray-1">Yeah I do</div>
+              <div class="msg msg-gray msg-gray-2">Are you available tomorrow at 2:30 PM?</div>
+              <div class="typing-indicator typing-indicator-right typing-2"><span></span><span></span><span></span></div>
+              <div class="msg msg-blue msg-blue-2">Yes, 2:30 PM tomorrow, Thursday February 8th works! Please fill out this form so we can get you booked in 👉 steamdry.ca/book</div>
             </div>
             <div class="imessage-input">
               <div class="input-plus">
@@ -66,91 +70,46 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- ===== SERVICES ===== -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label">What We Do</div>
-        <h2 class="section-title">3 ways we save you time and make you more money</h2>
-      </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon-wrap">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="var(--sage-lighter)" stroke-width="1.5"/><path d="M14 2l4 0m0 0l0 4m0-4l-5 5" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Missed Call Text-Back</h3>
-          <p>You miss a call while on a job and a text goes out to the customer instantly. Most leads reply within minutes instead of calling someone else.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon-wrap">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M17 1l4 4-4 4" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 11V9a4 4 0 014-4h14" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 23l-4-4 4-4" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 13v2a4 4 0 01-4 4H3" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Automatic Follow-Ups</h3>
-          <p>Sent a quote but haven't heard back? The system follows up for you on day 1, 3, and 7. No more leads slipping through the cracks.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon-wrap">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="var(--sage-lighter)" stroke-width="1.5"/><path d="M16 2v4M8 2v4M3 10h18" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round"/><path d="M9 16l2 2 4-4" stroke="var(--sage-lighter)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>AI Booking Assistant</h3>
-          <p>Customers can book, confirm, or reschedule over text and get a response right away. No phone tag, no back and forth.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== CASE STUDY ===== -->
   <section class="case-study-section">
     <div class="container">
-      <div class="section-header">
-        <div class="section-label">Proof of Concept</div>
-        <h2 class="section-title">Who this has proven to work for</h2>
-      </div>
-      <div class="case-study-grid">
-        <div class="pain-points">
-          <div class="pain-point">
-            <p class="pain-quote">"Lost another job 'cause no one answered"</p>
-            <p class="pain-solve">→ We installed a missed call text-back for Mark. Now when he's on a job and misses a call, the customer gets a text within seconds.</p>
-          </div>
-          <div class="pain-point">
-            <p class="pain-quote">"I quoted them and totally forgot to follow up"</p>
-            <p class="pain-solve">→ We set up automatic follow-ups. After a quote goes out, the system reaches out on day 1, 3, and 7 so leads never slip through.</p>
-          </div>
-          <div class="pain-point">
-            <p class="pain-quote">"I spend more time on my phone than on actual jobs"</p>
-            <p class="pain-solve">→ We set up a simple AI booking assistant. Customers book, confirm, and reschedule over text while Mark stays on the job.</p>
+      <div class="case-study-doc">
+        <div class="doc-company-row">
+          <img src="https://steamdrycanada.com/wp-content/uploads/2021/01/Steamdrycanada-logo-2.png" alt="SteamDry Canada logo" class="doc-logo-img" />
+          <div>
+            <h3 class="doc-company">SteamDry Canada</h3>
+            <p class="doc-subtitle">Steam Dry Cleaning Services · Vancouver, BC</p>
           </div>
         </div>
-        <div class="case-study-doc">
-          <div class="doc-badge">Case Study</div>
-          <h3 class="doc-company">SteamDry Canada</h3>
-          <p class="doc-subtitle">Gutter Cleaning &amp; Exterior Services · Vancouver, BC</p>
-          <div class="doc-section">
-            <h4>The Problem</h4>
-            <p>Mark was missing 5–8 calls per week while on jobs. By the time he called back, leads had already booked someone else. Quote follow-ups were hit-or-miss, and scheduling was done through texts and sticky notes.</p>
+        <div class="doc-hero">
+          <div class="doc-photo">
+            <img src="https://images.pexels.com/photos/14675105/pexels-photo-14675105.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional steam cleaning service" class="doc-photo-img" />
           </div>
-          <div class="doc-section">
-            <h4>What We Set Up</h4>
-            <ul>
-              <li>Missed call text-back that auto-responds in under 30 seconds</li>
-              <li>Automated quote follow-ups on day 1, 3, and 7</li>
-              <li>AI booking assistant via text message</li>
-            </ul>
-          </div>
-          <div class="doc-results">
-            <div class="doc-result">
+          <div class="doc-stats-side">
+            <div class="doc-stat">
               <strong>+43%</strong>
               <span>more jobs booked</span>
             </div>
-            <div class="doc-result">
+            <div class="doc-stat">
               <strong>6.5 hrs</strong>
               <span>saved per week</span>
             </div>
-            <div class="doc-result">
+            <div class="doc-stat">
               <strong>0</strong>
               <span>missed leads in 60 days</span>
             </div>
           </div>
+        </div>
+        <div class="doc-section">
+          <h4>The Problem</h4>
+          <p>Mark was missing 5–8 calls per week while on jobs. By the time he called back, leads had already booked someone else. Scheduling was done through texts and sticky notes.</p>
+        </div>
+        <div class="doc-section">
+          <h4>What We Set Up</h4>
+          <ul>
+            <li>Missed call text-back that auto-responds in under 30 seconds</li>
+            <li>AI booking assistant via text message</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -159,7 +118,9 @@ import Layout from '../layouts/Layout.astro';
   <!-- ===== TESTIMONIALS ===== -->
   <section class="testimonials">
     <div class="container">
-      <p class="trust-line">Helping businesses in the Vancouver and Vancouver Island area</p>
+      <div class="section-header">
+        <h2 class="section-title">Reviews</h2>
+      </div>
       <div class="testimonials-grid">
         <div class="testimonial-card">
           <div class="testimonial-top">
@@ -171,17 +132,31 @@ import Layout from '../layouts/Layout.astro';
               <span>SteamDry Canada</span>
             </div>
           </div>
+          <div class="testimonial-stars">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#f5a623"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#f5a623"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#f5a623"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#f5a623"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#f5a623"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
           <blockquote>"Kai set up our missed call system and we started getting replies from leads we would've just lost. It honestly paid for itself in the first month."</blockquote>
         </div>
         <div class="testimonial-card">
           <div class="testimonial-top">
             <div class="testimonial-logo">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#d4764e"/><text x="20" y="26" text-anchor="middle" fill="#fff" font-family="Lora, serif" font-size="13" font-weight="700">TR</text></svg>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#d4764e"/><text x="20" y="26" text-anchor="middle" fill="#fff" font-family="Lora, serif" font-size="13" font-weight="700">AR</text></svg>
             </div>
             <div class="testimonial-author">
               <strong>Sarah T.</strong>
-              <span>Thomas Realty</span>
+              <span>Aaron Realty</span>
             </div>
+          </div>
+          <div class="testimonial-stars">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#f5a623"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#f5a623"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#f5a623"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#f5a623"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24"><defs><linearGradient id="half-t"><stop offset="50%" stop-color="#f5a623"/><stop offset="50%" stop-color="#e0e0e0"/></linearGradient></defs><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="url(#half-t)"/></svg>
           </div>
           <blockquote>"The follow-up system saved me hours every week. My clients think I'm way more on top of things now. Wish I set this up years ago."</blockquote>
         </div>
@@ -189,96 +164,184 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- ===== HOW IT WORKS ===== -->
-  <section class="how-it-works" id="how-it-works">
+  <!-- ===== CONTACT FORM ===== -->
+  <!-- To receive form emails: sign up at formspree.io with Klkristiansen00@gmail.com and replace YOUR_FORM_ID below -->
+  <section class="contact-section" id="contact">
     <div class="container">
       <div class="section-header">
-        <div class="section-label">Our Process</div>
-        <h2 class="section-title">Four simple steps</h2>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="contact-subhead">Send us a message and we'll get back to you within 24 hours.</p>
       </div>
-      <div class="steps">
-        <div class="step">
-          <div class="step-marker">
-            <div class="step-number">1</div>
-          </div>
-          <div class="step-card">
-            <h3>We Learn About Your Business</h3>
-            <p>We ask a few simple questions about how your day runs, where time gets wasted, and what slows you down.</p>
-            <div class="step-mockup">
-              <div class="mockup-questions">
-                <div class="q-row"><span class="q-icon">?</span> What tools do you use day to day?</div>
-                <div class="q-row"><span class="q-icon">?</span> Where do your leads come from?</div>
-                <div class="q-row"><span class="q-icon">?</span> What eats up most of your time?</div>
-              </div>
-            </div>
-          </div>
+
+      <!-- Success state (hidden until submitted) -->
+      <div id="form-success" class="form-success" style="display:none;">
+        <div class="success-check">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="24" fill="var(--sage)"/>
+            <path d="M14 24l8 8 12-14" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </div>
-        <div class="step">
-          <div class="step-marker">
-            <div class="step-number">2</div>
-          </div>
-          <div class="step-card">
-            <h3>We Design Your Solution</h3>
-            <p>Based on what we learn, we put together a custom plan that fits how you actually work. No generic packages.</p>
-            <div class="step-mockup">
-              <div class="mockup-notification">
-                <div class="notif-item">
-                  <div class="notif-icon-circle notif-missed">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#ff3b30" stroke-width="2"/></svg>
-                  </div>
-                  <div class="notif-text">
-                    <div class="notif-title">Missed Call</div>
-                    <div class="notif-sub">(250) 555-0142 · just now</div>
-                  </div>
-                </div>
-                <div class="notif-item">
-                  <div class="notif-icon-circle notif-sent">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" stroke="#34c759" stroke-width="2"/></svg>
-                  </div>
-                  <div class="notif-text">
-                    <div class="notif-title">Auto-Reply Sent ✓</div>
-                    <div class="notif-sub">"Hey! Sorry I missed your call..."</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-marker">
-            <div class="step-number">3</div>
-          </div>
-          <div class="step-card">
-            <h3>We Set Everything Up</h3>
-            <p>We handle the tech, connect it to your tools, and test it all before going live. Your team gets trained so everyone's comfortable.</p>
-            <div class="step-mockup">
-              <div class="mockup-checklist">
-                <div class="check-row done"><span>&#10003;</span> Connect to your tools</div>
-                <div class="check-row done"><span>&#10003;</span> Test everything end to end</div>
-                <div class="check-row done"><span>&#10003;</span> Go live and train your team</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-marker">
-            <div class="step-number">4</div>
-          </div>
-          <div class="step-card">
-            <h3>We Keep It Running</h3>
-            <p>We check in monthly, track how things are running, and handle any tweaks or updates. If something comes up, we're a text away.</p>
-            <div class="step-mockup">
-              <div class="mockup-support">
-                <div class="support-row"><span class="support-dot on"></span> System running smoothly</div>
-                <div class="support-row"><span class="support-dot on"></span> 14 auto-replies this week</div>
-                <div class="support-row"><span class="support-dot"></span> Monthly check-in: Apr 3</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h3 class="success-title">Submission Sent!</h3>
+        <p class="success-msg">Thanks for reaching out — we'll be in touch within 24 hours.</p>
       </div>
+
+      <form
+        id="contact-form"
+        class="contact-form"
+        action="https://formspree.io/f/xykobwzo"
+        method="POST"
+        novalidate
+      >
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" placeholder="John" required />
+            <span class="field-error" id="err-first-name"></span>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" placeholder="Smith" required />
+            <span class="field-error" id="err-last-name"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email <span class="field-optional">(or phone)</span></label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" />
+            <span class="field-error" id="err-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="field-optional">(or email)</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (604) 555-0100" />
+            <span class="field-error" id="err-phone"></span>
+          </div>
+        </div>
+        <span class="field-error field-error-contact" id="err-contact"></span>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us a bit about your business and what you're looking for..." required></textarea>
+          <span class="field-error" id="err-message"></span>
+        </div>
+        <button type="submit" id="form-submit-btn" class="btn btn-primary btn-form-submit">
+          Send Message
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
     </div>
   </section>
+
+  <script>
+    (function () {
+      const form = document.getElementById('contact-form');
+      if (!form) return;
+
+      const emailInput  = document.getElementById('email');
+      const phoneInput  = document.getElementById('phone');
+      const firstInput  = document.getElementById('first-name');
+      const lastInput   = document.getElementById('last-name');
+      const msgInput    = document.getElementById('message');
+      const submitBtn   = document.getElementById('form-submit-btn');
+      const successDiv  = document.getElementById('form-success');
+
+      function showError(id, msg) {
+        const el = document.getElementById(id);
+        if (el) { el.textContent = msg; el.style.display = msg ? 'block' : 'none'; }
+      }
+      function setInvalid(input, state) {
+        if (state) input.classList.add('input-invalid');
+        else input.classList.remove('input-invalid');
+      }
+
+      // Strip letters in real-time as user types
+      phoneInput.addEventListener('input', function () {
+        const pos = this.selectionStart;
+        const before = this.value;
+        this.value = before.replace(/[a-zA-Z]/g, '');
+        // restore cursor if nothing was stripped
+        if (this.value.length !== before.length) {
+          this.setSelectionRange(pos - 1, pos - 1);
+        }
+      });
+
+      function validatePhone(val) {
+        if (/[a-zA-Z]/.test(val)) return false;
+        return (val.replace(/\D/g, '').length >= 8);
+      }
+
+      function validate() {
+        let ok = true;
+
+        // First name
+        if (!firstInput.value.trim()) {
+          showError('err-first-name', 'First name is required.');
+          setInvalid(firstInput, true); ok = false;
+        } else { showError('err-first-name', ''); setInvalid(firstInput, false); }
+
+        // Last name
+        if (!lastInput.value.trim()) {
+          showError('err-last-name', 'Last name is required.');
+          setInvalid(lastInput, true); ok = false;
+        } else { showError('err-last-name', ''); setInvalid(lastInput, false); }
+
+        // Email / phone (at least one required)
+        const email = emailInput.value.trim();
+        const phone = phoneInput.value.trim();
+        showError('err-email', ''); setInvalid(emailInput, false);
+        showError('err-phone', ''); setInvalid(phoneInput, false);
+        showError('err-contact', '');
+
+        if (!email && !phone) {
+          showError('err-contact', 'Please enter at least an email address or phone number.');
+          setInvalid(emailInput, true); setInvalid(phoneInput, true); ok = false;
+        } else {
+          if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            showError('err-email', 'Please enter a valid email address.');
+            setInvalid(emailInput, true); ok = false;
+          }
+          if (phone && !validatePhone(phone)) {
+            showError('err-phone', 'Phone must be at least 8 digits with no letters.');
+            setInvalid(phoneInput, true); ok = false;
+          }
+        }
+
+        // Message
+        if (!msgInput.value.trim()) {
+          showError('err-message', 'Please include a message.');
+          setInvalid(msgInput, true); ok = false;
+        } else { showError('err-message', ''); setInvalid(msgInput, false); }
+
+        return ok;
+      }
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        if (!validate()) return;
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
+
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { Accept: 'application/json' }
+          });
+          if (res.ok) {
+            form.style.display = 'none';
+            successDiv.style.display = 'flex';
+          } else {
+            showError('err-contact', 'Something went wrong. Please try again.');
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = 'Send Message <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+          }
+        } catch {
+          showError('err-contact', 'Network error. Please check your connection.');
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = 'Send Message <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+        }
+      });
+    })();
+  </script>
 
   <!-- ===== CTA ===== -->
   <section class="cta" id="cta">
@@ -292,7 +355,6 @@ import Layout from '../layouts/Layout.astro';
           Book a Call
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <p class="cta-note">No obligation. Most people walk away with at least one idea they can use right away.</p>
       </div>
     </div>
   </section>
@@ -305,8 +367,6 @@ import Layout from '../layouts/Layout.astro';
           <a href="#" class="logo">LetsK<span>AI</span></a>
         </div>
         <div class="footer-links">
-          <a href="#services">Services</a>
-          <a href="#how-it-works">Process</a>
           <a href="#cta">Contact</a>
         </div>
       </div>
@@ -392,7 +452,7 @@ import Layout from '../layouts/Layout.astro';
   /* Section headers */
   .section-header {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
 
   .section-label {
@@ -444,7 +504,7 @@ import Layout from '../layouts/Layout.astro';
 
   /* ===== HERO (mobile-first) ===== */
   .hero {
-    padding: 88px 0 32px;
+    padding: 72px 0 24px;
     position: relative;
     overflow: hidden;
     background: var(--cream);
@@ -461,24 +521,24 @@ import Layout from '../layouts/Layout.astro';
   .hero .container {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 20px;
     position: relative;
     z-index: 1;
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 700;
     line-height: 1.15;
     color: var(--text);
     letter-spacing: -0.3px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 
   .hero-desc {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     color: var(--text-muted);
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     line-height: 1.6;
   }
 
@@ -553,10 +613,11 @@ import Layout from '../layouts/Layout.astro';
   .contact-avatar { line-height: 0; }
 
   .phone-contact {
-    font-size: 0.75rem;
-    font-weight: 700;
+    font-size: 0.72rem;
+    font-weight: 500;
     color: #1c1c1e;
     font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.2px;
   }
 
   .phone-meta {
@@ -570,8 +631,22 @@ import Layout from '../layouts/Layout.astro';
     display: flex;
     flex-direction: column;
     gap: 6px;
-    min-height: 230px;
+    min-height: 340px;
     background: #fff;
+  }
+
+  .missed-call-notice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 0.68rem;
+    color: #8e8e93;
+    font-family: 'Nunito', sans-serif;
+    margin: 4px 0 6px;
+    opacity: 0;
+    transform: translateY(4px);
+    animation: mc 14s ease-out infinite;
   }
 
   .msg {
@@ -610,6 +685,13 @@ import Layout from '../layouts/Layout.astro';
     opacity: 0;
   }
 
+  .typing-indicator-right {
+    align-self: flex-end;
+    background: #007AFF;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 18px;
+  }
+
   .typing-indicator span {
     width: 6px;
     height: 6px;
@@ -617,6 +699,8 @@ import Layout from '../layouts/Layout.astro';
     border-radius: 50%;
     animation: typingDot 1.4s infinite;
   }
+
+  .typing-indicator-right span { background: rgba(255,255,255,0.75); }
 
   .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
   .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
@@ -648,42 +732,54 @@ import Layout from '../layouts/Layout.astro';
     font-family: 'Nunito', sans-serif;
   }
 
-  /* Message animation — 14s loop */
-  .msg-1 { animation: m1 14s ease-out infinite; }
-  .typing-1 { animation: t1 14s ease-out infinite; }
-  .msg-2 { animation: m2 14s ease-out infinite; }
-  .msg-3 { animation: m3 14s ease-out infinite; }
-  .typing-2 { animation: t2 14s ease-out infinite; }
-  .msg-4 { animation: m4 14s ease-out infinite; }
+  /* Message animation — 14s loop (5s reading pause at end) */
+  .msg-blue-1  { animation: mb1 14s ease-out infinite; }
+  .typing-1    { animation: t1  14s ease-out infinite; }
+  .msg-gray-1  { animation: mg1 14s ease-out infinite; }
+  .msg-gray-2  { animation: mg2 14s ease-out infinite; }
+  .typing-2    { animation: t2  14s ease-out infinite; }
+  .msg-blue-2  { animation: mb2 14s ease-out infinite; }
 
-  @keyframes m1 {
-    0%, 3% { opacity: 0; transform: translateY(8px); }
-    6%, 86% { opacity: 1; transform: translateY(0); }
+  /* mc = missed call notice; appears first */
+  @keyframes mc {
+    0%, 2%  { opacity: 0; transform: translateY(4px); }
+    5%, 90% { opacity: 1; transform: translateY(0); }
     93%, 100% { opacity: 0; transform: translateY(0); }
   }
+  /* mb1 = first blue message, ~1s after missed call */
+  @keyframes mb1 {
+    0%, 8%  { opacity: 0; transform: translateY(8px); }
+    11%, 90% { opacity: 1; transform: translateY(0); }
+    93%, 100% { opacity: 0; transform: translateY(0); }
+  }
+  /* t1 = typing before customer replies */
   @keyframes t1 {
-    0%, 13% { opacity: 0; }
-    16%, 23% { opacity: 1; }
-    24%, 100% { opacity: 0; }
+    0%, 26% { opacity: 0; }
+    29%, 34% { opacity: 1; }
+    36%, 100% { opacity: 0; }
   }
-  @keyframes m2 {
-    0%, 23% { opacity: 0; transform: translateY(8px); }
-    26%, 86% { opacity: 1; transform: translateY(0); }
+  /* mg1 = first gray message */
+  @keyframes mg1 {
+    0%, 34% { opacity: 0; transform: translateY(8px); }
+    37%, 90% { opacity: 1; transform: translateY(0); }
     93%, 100% { opacity: 0; transform: translateY(0); }
   }
-  @keyframes m3 {
-    0%, 38% { opacity: 0; transform: translateY(8px); }
-    41%, 86% { opacity: 1; transform: translateY(0); }
+  /* mg2 = second gray message */
+  @keyframes mg2 {
+    0%, 41% { opacity: 0; transform: translateY(8px); }
+    44%, 90% { opacity: 1; transform: translateY(0); }
     93%, 100% { opacity: 0; transform: translateY(0); }
   }
+  /* t2 = typing before final blue */
   @keyframes t2 {
     0%, 48% { opacity: 0; }
-    51%, 58% { opacity: 1; }
+    51%, 57% { opacity: 1; }
     59%, 100% { opacity: 0; }
   }
-  @keyframes m4 {
-    0%, 58% { opacity: 0; transform: translateY(8px); }
-    61%, 86% { opacity: 1; transform: translateY(0); }
+  /* mb2 = final blue message — 55% = ~7.7s, visible until 90% = 12.6s (≈5s pause) */
+  @keyframes mb2 {
+    0%, 57% { opacity: 0; transform: translateY(8px); }
+    60%, 90% { opacity: 1; transform: translateY(0); }
     93%, 100% { opacity: 0; transform: translateY(0); }
   }
 
@@ -739,7 +835,7 @@ import Layout from '../layouts/Layout.astro';
 
   /* ===== CASE STUDY (mobile) ===== */
   .case-study-section {
-    padding: 48px 0;
+    padding: 24px 0;
     background: var(--warm-white);
   }
 
@@ -781,46 +877,80 @@ import Layout from '../layouts/Layout.astro';
     font-weight: 700;
   }
 
+  .review-card { padding: 18px 20px; }
+
+  .review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .review-author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .review-author-info strong {
+    font-size: 0.9rem;
+    color: var(--text);
+  }
+
+  .review-author-info span {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+
+  .review-stars {
+    display: flex;
+    gap: 2px;
+    flex-shrink: 0;
+  }
+
+  .review-card .pain-quote {
+    margin-bottom: 0;
+    font-size: 0.92rem;
+  }
+
   /* Case study document */
   .case-study-doc {
     background: #fff;
     border: 1px solid var(--border);
     border-radius: 4px;
-    padding: 24px 20px;
+    padding: 16px 14px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03);
-    max-height: 440px;
-    overflow-y: auto;
   }
 
-  .doc-badge {
-    display: inline-block;
-    font-size: 0.62rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--sage);
-    background: var(--sage-glow);
-    padding: 4px 10px;
-    border-radius: 4px;
-    margin-bottom: 12px;
-    font-family: 'Nunito', sans-serif;
+  .doc-company-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  .doc-logo-img {
+    height: 26px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
   }
 
   .doc-company {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     font-weight: 700;
     color: var(--text);
-    margin-bottom: 4px;
+    margin-bottom: 1px;
   }
 
   .doc-subtitle {
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     color: var(--text-muted);
-    margin-bottom: 18px;
+    margin-bottom: 10px;
   }
 
   .doc-section {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
 
   .doc-section h4 {
@@ -834,9 +964,9 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .doc-section p {
-    font-size: 0.88rem;
+    font-size: 0.82rem;
     color: var(--text-muted);
-    line-height: 1.6;
+    line-height: 1.55;
   }
 
   .doc-section ul {
@@ -845,9 +975,9 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .doc-section li {
-    font-size: 0.88rem;
+    font-size: 0.82rem;
     color: var(--text-muted);
-    line-height: 1.6;
+    line-height: 1.55;
     padding: 2px 0 2px 16px;
     position: relative;
   }
@@ -858,6 +988,66 @@ import Layout from '../layouts/Layout.astro';
     left: 0;
     color: var(--sage);
     font-weight: 700;
+  }
+
+  .doc-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .doc-photo {
+    width: 100%;
+    border-radius: calc(var(--radius) - 2px);
+    overflow: hidden;
+    height: 130px;
+    background: #c8d8e8;
+  }
+
+  .doc-photo svg { display: block; }
+
+  .doc-stats-side {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .doc-stat {
+    flex: 1;
+    background: var(--cream);
+    border: 1px solid var(--border-light);
+    border-radius: calc(var(--radius) - 4px);
+    padding: 8px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .doc-photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .doc-stat strong {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--sage);
+    line-height: 1;
+    letter-spacing: -0.5px;
+  }
+
+  .doc-stat span {
+    font-size: 0.58rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-top: 3px;
+    line-height: 1.3;
   }
 
   .doc-results {
@@ -887,7 +1077,7 @@ import Layout from '../layouts/Layout.astro';
 
   /* ===== TESTIMONIALS (mobile) ===== */
   .testimonials {
-    padding: 48px 0;
+    padding: 32px 0;
     background: var(--cream);
     border-top: 1px solid var(--border);
   }
@@ -942,6 +1132,12 @@ import Layout from '../layouts/Layout.astro';
   .testimonial-author span {
     font-size: 0.78rem;
     color: var(--text-muted);
+  }
+
+  .testimonial-stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 10px;
   }
 
   .testimonial-card blockquote {
@@ -1133,6 +1329,136 @@ import Layout from '../layouts/Layout.astro';
 
   .support-dot.on { background: #34c759; }
 
+  /* ===== CONTACT FORM (mobile) ===== */
+  .contact-section {
+    padding: 40px 0;
+    background: var(--warm-white);
+    border-top: 1px solid var(--border);
+  }
+
+  .contact-subhead {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 6px;
+    line-height: 1.5;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .form-group label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    color: var(--text);
+    background: #fff;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: var(--text-faint);
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: var(--sage-lighter);
+    box-shadow: 0 0 0 3px var(--sage-glow);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 110px;
+    line-height: 1.5;
+  }
+
+  .btn-form-submit {
+    width: 100%;
+    font-size: 1rem;
+    padding: 16px 24px;
+  }
+
+  .field-optional {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--text-faint);
+  }
+
+  .field-error {
+    display: none;
+    font-size: 0.78rem;
+    color: #d9534f;
+    margin-top: 4px;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .field-error-contact {
+    margin-bottom: 4px;
+  }
+
+  .input-invalid {
+    border-color: #d9534f !important;
+    box-shadow: 0 0 0 3px rgba(217, 83, 79, 0.12) !important;
+  }
+
+  /* Success state */
+  .form-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 48px 24px;
+    gap: 16px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .success-check { line-height: 0; }
+
+  .success-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text);
+    font-family: 'Lora', Georgia, serif;
+  }
+
+  .success-msg {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
   /* ===== CTA (mobile) ===== */
   .cta {
     background: var(--cream);
@@ -1272,16 +1598,26 @@ import Layout from '../layouts/Layout.astro';
     .services { padding: 72px 0; }
 
     .case-study-section { padding: 72px 0; }
-    .case-study-grid {
+    .doc-hero {
       flex-direction: row;
-      gap: 28px;
-      align-items: flex-start;
+      align-items: stretch;
     }
-    .pain-points { flex: 1; }
-    .case-study-doc { flex: 1; }
+    .doc-photo {
+      flex: 1.2;
+      height: auto;
+      min-height: 200px;
+    }
+    .doc-stats-side {
+      flex: 0 0 180px;
+      flex-direction: column;
+    }
 
     .testimonials { padding: 72px 0; }
     .how-it-works { padding: 72px 0; }
+
+    .contact-section { padding: 72px 0; }
+    .form-row { flex-direction: row; }
+    .btn-form-submit { width: auto; }
 
     .cta { padding: 72px 0; }
     .cta .btn-lg { width: auto; }
@@ -1347,9 +1683,13 @@ import Layout from '../layouts/Layout.astro';
     .services-grid { grid-template-columns: repeat(3, 1fr); gap: 18px; }
     .service-card { padding: 28px 24px; }
 
-    .case-study-section { padding: 88px 0; }
-    .case-study-grid { gap: 44px; }
-    .case-study-doc { padding: 28px 24px; max-height: none; }
+    .case-study-section { padding: 72px 0; }
+    .case-study-doc { padding: 28px 24px; max-width: 680px; margin: 0 auto; }
+    .doc-stat strong { font-size: 2.2rem; }
+    .doc-stat span { font-size: 0.65rem; }
+    .doc-company { font-size: 1.1rem; }
+    .doc-subtitle { font-size: 0.78rem; margin-bottom: 16px; }
+    .doc-section p, .doc-section li { font-size: 0.88rem; }
 
     .testimonials { padding: 88px 0; }
     .testimonial-card { padding: 28px 24px; }
