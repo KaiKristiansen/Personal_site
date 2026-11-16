@@ -5,8 +5,8 @@ interface Props {
 }
 
 const {
-  title = 'LetsKAI',
-  description = 'Never lose a customer due to a missed call again.',
+  title = 'Missed Call Text Back & AI Booking for Service Businesses | LetsKAI',
+  description = 'LetsKAI texts back missed calls instantly and books jobs with an AI assistant, so local service businesses stop losing leads. See the results. Book a free call.',
 } = Astro.props;
 ---
 
@@ -18,6 +18,12 @@ const {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href="https://www.letskai.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LetsKAI" />
+    <meta property="og:title" content="Never Lose a Customer to a Missed Call Again | LetsKAI" />
+    <meta property="og:description" content="Automated text-back and AI booking for service businesses. Every missed call becomes a booked job." />
+    <meta property="og:url" content="https://www.letskai.com/" />
+    <meta name="twitter:card" content="summary" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
